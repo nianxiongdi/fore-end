@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>partialPrint</title>
+
+
+    <script>
+        function partialPrint() {
+  
+            ele = '#xy2';
+            if (typeof ele !== 'string') return;
+            const element = document.querySelector(ele);
+            if (!ele) return;
+            const newWindow = window.open('', '_blank', 'resizable=no,scrollbars=no,status=no');
+            newWindow.document.write(element.innerHTML);
+            newWindow.print();
+            newWindow.close();
+        }
+    
+    </script>
+</head>
+<body>
+
+    <button onclick="partialPrint()">
+        打印
+    </button>
+
+    <div id="xy2">
+        大话西游2
+    </div>
+
+</body>
+</html>
