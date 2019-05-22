@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <script>
+            /*
+             *   https://zhuanlan.zhihu.com/p/24475845?refer=mirone
+             *
+             *  angularjs双向绑定-例子：
+                    https://www.jianshu.com/p/ad0c48810bf1
+             *      原理：AngularJs 为 scope 模型上设置了一个 监听队列，用来监听数据变化并更新 view 。
+                        每次绑定一个东西到 view(html) 上时 AngularJs 就会往 $watch 队列里插入一条 $watch，
+                        用来检测它监视的 model 里是否有变化的东西。当浏览器接收到可以被 angular context 处理的事件时，
+                        $digest 循环就会触发。$digest 会遍历所有的 $watch。从而更新DOM。
+
+                实现：
+                    Scope {
+                        $$watchers 监听多余的变量
+                        $digest 数据循环检测
+                        ...
+                    }
+             */
+
+
+
             function Scope(){
                 this.$$watchers=[];         //监听器
             }
         
             Scope.prototype.$watch=function(name,exp,listener){
+       
                 this.$$watchers.push({
                     name:name,                              //数据变量名
                     last:'',                                //数据变量旧值
@@ -30,7 +52,8 @@
         
                         if(newVal!==oldVal && !isNaN(newVal) && !isNaN(oldVal)){
                             dirty=true;
-                            this.$$watchers[i].listener(oldVal,newVal);
+                            // console.log(this.$$watchers[i].listener)
+                            this.$$watchers[i].listener(oldVal,newVal); // 发现这句话并没有怎么监听
                             this.$$watchers[i].last=newVal;
                             for (var j = 0; j < bindList.length; j++) {
                                 //获取DOM上的数据变量的名称
@@ -82,12 +105,17 @@
         
                 //绑定数据
                 for(var key in $scope){
+                    
                     if(key!="$$watchers" && typeof $scope[key]!="function") {            //非函数数据才进行绑定
+                        // console.log(key);
                         $scope.$watch(key, (function (index) {
                             return function(){
                                 return $scope[index];
                             }
-                        })(key))
+                        })(key),
+                        function(newVal, oldVal){
+                            console.log(newVal, oldVal)
+                        })
                     }
                 }
         
