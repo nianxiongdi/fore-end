@@ -11,6 +11,7 @@
   "dependencies": {
     "co": "^4.6.0",
     "hsf-client": "^9.6.1",
-    "js-to-java": "^2.6.1"
+    "js-to-java": "^2.6.1",
+    "urllib": "^2.34.0"
   }
 }

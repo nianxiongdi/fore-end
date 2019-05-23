@@ -197,7 +197,7 @@ readFile = function(name){
 }
 
 function* g() {
-    yield readFile('a');
+    yield readFile('a'); // 返回的是{ value: [Function 产生器], done: false }
     yield readFile('b');
 }
 
