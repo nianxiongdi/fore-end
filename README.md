@@ -11,6 +11,12 @@
 [Javascript中装饰器](./js/04_decorator.md) | 运行时改变类或者类的属性  |
 [Thunk函数](./js/04_decorator.md) | 传名调用，解决异步问题等  |
 
+## javascript权威指南
+
+| 标题      | 说明  |
+| ---------- | :-----------: |
+
+[计算利息](./javascriptAuthGuide/01_chapter.md) | 计算利息的利息 |
 
 
 ## react学习

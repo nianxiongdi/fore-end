@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "co": "^4.6.0",
     "hsf-client": "^9.6.1",
     "js-to-java": "^2.6.1",
