@@ -5,6 +5,7 @@
 
 | 标题      | 说明  |
 | ---------- | :-----------: |
+[v8引擎详细介绍－看吐血的文章](./js/06_V8.md) | 使用window对象打印pdf文件 |
 [打印为pdf](./js/01-Printer.html) | 使用window对象打印pdf文件 |
 [angularjs双向绑定](./js/02_mvvm.html) | anrularjs实现的例子和proxy,defineproperty双向绑定 |
 [柯西里函数](./js/03_currying.md) | 实现多函数的技术  |
@@ -15,7 +16,6 @@
 
 | 标题      | 说明  |
 | ---------- | :-----------: |
-
 [计算利息](./javascriptAuthGuide/01_chapter.md) | 计算利息的利息 |
 
 
