@@ -5,12 +5,14 @@
 
 | 标题      | 说明  |
 | ---------- | :-----------: |
-[v8引擎详细介绍－看吐血的文章](./js/06_V8.md) | 使用window对象打印pdf文件 |
-[打印为pdf](./js/01-Printer.html) | 使用window对象打印pdf文件 |
+[v8引擎详细介绍－看吐血的文章](./js/06_V8.md) | 介绍v8引擎的实现 |
+[js打印为pdf](./js/01-Printer.html) | 使用window对象打印pdf文件 |
+[js打印为pdf详解](./js/01-Printer.ｍｄ) | 背景颜色的打印 |
 [angularjs双向绑定](./js/02_mvvm.html) | anrularjs实现的例子和proxy,defineproperty双向绑定 |
 [柯西里函数](./js/03_currying.md) | 实现多函数的技术  |
 [Javascript中装饰器](./js/04_decorator.md) | 运行时改变类或者类的属性  |
 [Thunk函数](./js/04_decorator.md) | 传名调用，解决异步问题等  |
+[js类型的判断](https://www.cnblogs.com/ma-shuai/p/7805264.html) | 是否为空,是什么类型多种方式  |
 
 ## javascript权威指南
 
@@ -36,4 +38,10 @@
 [js与java转换](./npm/jsToJava.js) | 代码之间转换 |
 [co](./npm/co.js) | 用于 Generator 函数的自动执行 |
 [urllib](./npm/urllib.js) | 请求接口 |
- 
+[marked]() | 实现markdown文档 |
+[highlight.js]() | 对markdown文档的修饰 |
+
+
+
+## [网站]
+* https://javascript.ruanyifeng.com/stdlib/wrapper.html
