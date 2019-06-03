@@ -13,7 +13,9 @@
 [Javascript中装饰器](./js/04_decorator.md) | 运行时改变类或者类的属性  |
 [Thunk函数](./js/04_decorator.md) | 传名调用，解决异步问题等  |
 [js类型的判断](https://www.cnblogs.com/ma-shuai/p/7805264.html) | 是否为空,是什么类型多种方式  |
-
+[js对象去重](https://www.cnblogs.com/kagol/p/5343173.html)  | 判断对象是否重复 |
+https://blog.csdn.net/dxj124/article/details/82787753
+https://www.cnblogs.com/gangerdai/p/7455930.html
 ## javascript权威指南
 
 | 标题      | 说明  |
