@@ -1,4 +1,3 @@
-
 ## 柯里化
 
 * 实现多函数的技术
@@ -61,6 +60,48 @@ console.log(sum(10, 5));   // 25
  
 ```
 
+* 实现多参数技术
+    * 为实现多参函数提供一个递归讲解的实现思路,把接受多个参数的函数换成接受一个单参数的函数,并返回接受余下的参数,而且返回新的函数
+
+```js
+// 两个数相加
+
+function add(x, y) {
+    return x+y;
+}
+
+function add(x) {
+    return function(y){
+        return x + y;
+    }
+}
+
+//es6
+const add = x=>y=> x+y;
+
+add(1)(2) // 3
+```
+
+## 应用
+* 数组的map
+```js
+
+const list = [1,2,3,4,5];
+const list1 = list.map(item => item+1);
+
+
+// 柯里化 - 数组中所以元素加1
+
+function plus(index) {
+    return function(item) {
+        return index + item;
+    }
+}
+
+const plus1 = plus(1);
+const list1 = list.map(plus1); // [2,3,4,5,6]
+
+```
 
 参考:
 * https://juejin.im/post/5af13664f265da0ba266efcf
