@@ -21,7 +21,8 @@ https://www.cnblogs.com/gangerdai/p/7455930.html
 | 标题      | 说明  |
 | ---------- | :-----------: |
 [计算利息](./javascriptAuthGuide/01_chapter.md) | 计算利息的利息 |
-
+[语法结构](./javascriptAuthGuide/02_chapter.md) |  |
+[类型，值和变量](./javascriptAuthGuide/o3_test.md)|  |
 
 ## react学习
 
