@@ -43,7 +43,7 @@ https://www.cnblogs.com/gangerdai/p/7455930.html
 [urllib](./npm/urllib.js) | 请求接口 |
 [marked]() | 实现markdown文档 |
 [highlight.js]() | 对markdown文档的修饰 |
-
+[qs.js](./npm/qs.js) | object对象与拼接字符串的互转 |
 
 
 ## [网站]
