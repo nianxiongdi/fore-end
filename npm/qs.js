@@ -1,6 +1,4 @@
-```js
-
-
+'''js
 // qs.parse() - 将URL解析成对象的形式
 
 const qs = require('qs');
@@ -21,4 +19,4 @@ console.log(qs.stringify(obj));
  
 
 // 参考 https://blog.csdn.net/suwu150/article/details/78333452
-```
+'''
