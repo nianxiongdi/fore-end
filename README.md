@@ -45,6 +45,8 @@ https://www.cnblogs.com/gangerdai/p/7455930.html
 [highlight.js]() | 对markdown文档的修饰 |
 [qs.js](./npm/qs.js) | object对象与拼接字符串的互转 |
 
+## 设计模式
+[设计模式](./design model/README.md)
 
 ## [网站]
 * https://javascript.ruanyifeng.com/stdlib/wrapper.html
