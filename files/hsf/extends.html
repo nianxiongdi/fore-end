@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>extends</title>
+</head>
+<body>
+
+    <script>
+        function Base(name) {
+            this.name = name;
+        }
+        Base.prototype.say = function() {
+            console.log('base fun...');
+        }
+        function Student(name, className) {
+            Base.call(this, name);
+            this.className = className;
+        }
+        
+
+        // 理解一点  对象的.__proto__ == 构造函数.prototype
+        Student.prototype = Object.create(Base.prototype);
+        
+        Student.prototype.constructor = Student;
+ 
+        Student.prototype.pay = function() {
+            console.log('song...');
+        }
+
+        let st = new Student('name', '3_2')
+        console.log(st);
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

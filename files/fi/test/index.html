@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>靳闯博客 - svg转换png图片示例页面</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+<body>
+    <div class="svg-wrap" id="div" style="width: 100px;height:100px;">
+        <svg viewBox="0 0 100 100">
+            <path
+              style="stroke: #5584FF"
+              d="M 50,50 m 0,-46 a 46,46 0 1 1 0,92 a 46,46 0 1 1 0,-92"
+              fill-opacity="0"
+            />
+            <path
+              style="stroke: #5584FF"
+              d="M 50,50 m 0,-46 a 46,46 0 1 1 0,92 a 46,46 0 1 1 0,-92"
+              fill-opacity="0"
+              stroke-dasharray="289.02652413026095px 289.02652413026095px"
+              stroke-dashoffset="202.31856689118266px"
+            />
+          </svg>
+    </div>
+<script type="text/javascript">
+    var svgXml = $('.svg-wrap').html();
+
+    // var image = new Image();
+    var image = document.createElement('img');
+    image.setAttribute('src', 'data:image/svg+xml;base64,' + window.btoa(unescape(encodeURIComponent(svgXml))));
+    // image.src =  //给图片对象写入base64编码的svg流
+    document.getElementById('div').appendChild(image)
+    image.onload = function() {
+        console.log(123);
+    }
+    // var canvas = document.createElement('canvas');  //准备空画布
+    // canvas.width = $('.svg-wrap svg').width();
+    // canvas.height = $('.svg-wrap svg').height();
+    // var context = canvas.getContext('2d');  //取得画布的2d绘图上下文
+    // context.drawImage(image, 0, 0);
+
+    // var a = document.createElement('a');
+    // a.href = canvas.toDataURL('image/png');  //将画布内的信息导出为png图片数据
+    // a.download = "MapByMathArtSys";  //设定下载名称
+    // a.click(); //点击触发下载
+    
+ 
+</script>
+</body>
+</html>

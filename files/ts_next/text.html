@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style style="display:flex" contenteditable>
+        /* 我可*/
+    </style>
+</head>
+<body>
+    <script>
+        // (function(x){
+        //     return (function(){
+        //         console.log(x);  
+        //     })(2)
+        // })(3)
+
+        // pi = 0;
+        // radius = 1;
+        // function cie(radius) {
+        //     radius = 3;
+        //     pi = 3.14;
+        //     console.log(2*pi*radius);
+        // }
+        // cie(2)
+
+        // console.log(foo)
+        // function foo(){
+        //     console.log('bb')
+        // }
+        // function foo(){
+        //     console.log('cc')
+        // }
+        // var foo = 'aa'
+        // console.log(1);
+        // let a = requestAnimationFrame(()=> {console.log(2)}, 0);
+        // console.log(3);
+        // await (()=> Promise.resolve(4).then(b=>{
+        //     console.log(b);
+        //     cancelAnimationFrame(a);
+        // }))();
+        // console.log(5);
+        /*
+            window.a = 300;
+            function fn1(){
+                this.a = 100;
+                this.b = 200;
+                return function(){
+                    alert(this.a);
+                }.call(arguments[0]);
+            }
+
+            function fn2() {
+                this.a = new fn1();
+            }
+
+            var a = new fn1().b;
+            var v = new fn1(fn2());
+            */
+            /*
+        let num = 10;
+
+        let put = "";
+        
+        for(let i=1;i<=num;i++){
+            let sq = Math.sqrt(i);
+            if(Math.floor(sq) !== sq){
+                continue;
+            }
+            put += i + '';
+        }
+
+        console.log(put);
+        */
+       // Array.from(a=>a+1)
+        /*
+        function Dog(){}
+        Dog.prototype = {
+            bark(){
+                console.log(1);
+            }
+        }
+
+        const dog = new Dog();
+        dog.bark();
+        Dog.prototype.bark = function(){
+            console.log(2)
+        }
+        dog.bark();
+
+        Dog.prototype = {
+            bark() {
+                console.log(3)
+            }
+        }
+        dog.bark();
+        */
+
+
+
+        function get(...args){
+            console.log(typeof args);
+        }
+
+        get(12);
+
+        const {name: myName} = {name: '的分身乏术'};
+        console.log(name);
+
+//         var test1 = new function(){return 'test1'};
+// var test2 = new function(){return ['test2']};
+
+// console.log(test1.constructor)
+// console.log(test2.constructor)
+        const person = {name: 'tom'};
+        function say(age){
+            console.log(`${this.name} is ${age}`);
+        }
+        say.call(person, 21);
+        say.bind(person, 21);
+
+
+        function flat(arr){
+  var toString = ''; // 1
+  Array.prototype.toString = function(){
+    return this.join(','); //2
+  }
+  var result = arr.toString();
+  Array.prototype.toString = function(){ return this.split(',') }; //3
+  return result;
+}
+
+
+var test = [1,2,3,[2,[1222,3,[4,5]]],3,];
+
+console.log(flat(test))
+
+
+    </script>
+    <h1>123
+        <h2>12</h2>
+    </h1>
+
+    <strong>ee
+        <em>ww</em>
+    </strong>
+
+    <ol>
+        <li>23</li>
+    </ol>
+
+    <div onclick="console.log('div')">
+        <div onclick="console.log('p')">
+            eweerrr
+        </div>
+    </div>
+
+</body>
+</html>

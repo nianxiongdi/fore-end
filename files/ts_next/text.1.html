@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style style="display:flex" contenteditable>
+        /* 我可*/
+    </style>
+</head>
+<body>
+    <script>
+        // var A = function(name) {
+        //     this.name1 = name; // this.name代表函数名，这里避免冲突
+        //     this.getAname = function(){ console.log() }
+        // }
+        // A.prototype.getName = function() {
+        //     console.log('1234');
+        // }
+
+        // var B = function(age) {
+        //     this.age = age;
+        //     this.getAge = function() {}
+        // }
+
+        // var C = function(name, age) {
+        //     A.call(this, name);
+        //     B.call(this, age);
+        // }
+
+        // // usage
+        // var c = new C('n', 2);
+
+        // function A(name){
+            
+        //     if(typeof A.instance === 'object'){
+        //         return A.instance;
+        //     }
+ 
+        //     A.instance = this;
+        //     console.log(this);
+
+        //     return this;
+        // }
+
+        // var a1 = new A();
+        // var a2 = new A();
+        // console.log(a1 == a1);
+    //     nodes = [];
+    //     function do1(root) {
+    //         console.log(root.childNodes.length);
+    //         for (let i = 0;i < root.childNodes.length;i++) {
+    //             var node = root.childNodes[i];
+    //             // 过滤 text 节点、script 节点
+    //             console.log(node.nodeType,node.nodeName);
+    //             if ((node.nodeType != 3) && (node.nodeName != 'SCRIPT')) {
+    //                 console.log(node)
+    //                 nodes.push(node);
+    //                 do1(node);
+    //             }
+    //         }
+    //         return nodes;
+    //     }
+
+    //   console.log(  do1(document.body));
+    </script>
+     
+    <h1></h1>
+    <div id="name"></div>
+    <h1></h1>
+    <div></div>
+    <h1></h1>
+    <div></div>
+
+    <script>
+    
+    nodes = [];
+    function do1(root) {
+        // console.log(root.childNodes.length);
+        for (let i = 0;i < root.childNodes.length;i++) {
+            var node = root.childNodes[i];
+            // 过滤 text 节点、script 节点
+            // console.log(node.nodeType,node.nodeName);
+            if ((node.nodeType != 3) && (node.nodeName != 'SCRIPT')) {
+                // console.log(node)               
+                if(node.id && node.id=='name'){
+                    return node;
+                }
+                nodes.push(node);
+                do1(node);
+            }
+        }
+        return nodes;
+    }
+    console.log(  do1(document.body));
+    </script>
+</body>
+</html>

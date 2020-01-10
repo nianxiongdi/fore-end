@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>refs获取子组件的属性</title>
+<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="example"></div>
+<script type="text/babel">
+
+class Child extends React.Component{
+    
+    constructor(props){
+        super(props);
+        this.state={
+           name:'Child'
+        }
+    }    
+
+    render(){
+        return(
+            <div>
+                {this.props.name}
+            </div>
+        )
+    }
+}
+
+
+class App extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+           name:'hhh'
+        }
+        this.handleClick = this.handleClick.bind(this)
+    };
+
+  handleClick(){
+    console.log(this.refs);
+    console.log( this.refs.child.state.name)
+  }
+ 
+ // ref调用真实的dom对象
+  render() {
+    return (
+      <div  >
+        <Child ref="child"  name={this.state.name} ></Child>
+        <button onClick={ this.handleClick } >哈哈</button>
+      </div>
+    );
+  }
+}
+
+ 
+ReactDOM.render(
+  <App />,
+  document.getElementById('example')
+);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style style="display:flex" contenteditable>
+        /* 我可*/
+    </style>
+</head>
+<body>
+    <script>
+        
+        function Base(name){
+            this.name = 'base';
+            this.getBase = function(){
+                console.log('get base');
+            }
+        }
+
+        function Person(name, sex){
+            Base.call(this, name);
+            this.namep = 'person';
+            this.getPerson = function() {
+                console.log('get person');
+            }
+        }
+        Person.prototype = new Base();
+
+        function Men(name, sex, age) {
+            Person.call(name, sex);
+            this.age = age;
+            this.getMen = function(){
+                console.log('get men');
+            }
+        }
+        Men.prototype = new Person();
+        
+    
+
+ 
+
+    </script>
+     
+
+</body>
+</html>

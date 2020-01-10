@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 0;
+            height: 0;
+            border: 40px solid blue; /* 方式1 */
+        /*     border-width: 400px;
+            border-style: solid;  方式2*/
+            border-color: transparent transparent transparent red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        /*
+            var getName = function () {
+                console.log(3);
+            }
+
+            function getName() {
+                console.log(2);
+            }
+            getName(); //3
+        */
+        
+        /*
+            var a = 3;
+            function getName() {
+                console.log(a); // undefined
+                var a = 2;
+            }
+            getName();
+        */
+        
+        /*
+            function getName() {
+                console.log(a); // Uncaught ReferenceError: a is not defined
+                a = 2;
+            }
+            getName();
+        */
+        
+        /*
+            console.log(a); // Uncaught ReferenceError: a is not defined
+            a = 2;
+        */
+
+       /*     
+            var a = 2;
+            function a() { }
+            console.log(a);// 2
+       */
+    
+        /*
+            function fun() {
+                    a = 2; // 这里没有声明，会往全局变量上定义一个变量var a;
+            }
+            fun();
+            console.log(a); // 2
+       */
+
+
+    //    function getName() {
+    //         a = 2; //这里会声明为全局变量
+    //      }
+    //     getName();
+    //     console.log(a); // 2
+
+ 
+
+
+    </script>
+</body>
+</html>

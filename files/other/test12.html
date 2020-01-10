@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        /* bfc撑开独立空间 */
+        /* .left {
+          width: 100px;
+          height: 400px;
+          background: green;
+          float: left;
+        }
+        .right {
+          overflow: hidden;
+          width: 100px;
+          height: 400px;
+          background: red;
+        } */
+    </style>
+      
+      <div class="left">左边</div>
+      <div class="right">
+        <div class="123">
+          <div class="abc">
+            sdflkfjrk
+          </div>
+        </div>
+      </div>
+
+
+    <script>
+      // var obj = {
+      //   name: 123,
+      //   getName: function(){
+      //     console.log('obj');
+      //   }
+      // }
+
+
+      // function fun(){
+
+      // }
+
+      // fun.prototype.get = function(){
+      //   console.log('~function~');
+      // }
+
+
+      let deepTraversal1 = (node, nodeList = []) => {
+        if (node !== null) {
+          console.log(node);
+          if(node.nodeType == 1){
+            nodeList.push(node)
+          }
+          let children = node.children
+          for (let i = 0; i < children.length; i++) {
+            deepTraversal1(children[i], nodeList)
+          }
+        }
+        return nodeList
+      }
+
+      const dom = document.body;
+      const nodeList = [];
+
+      const dom1 = deepTraversal1(dom, nodeList);
+      console.log(dom1);
+
+
+    </script>
+</body>
+</html>

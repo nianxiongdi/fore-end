@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .container{
+            width: 1000px;
+            margin: 20px auto;
+            background-color: silver;
+        }
+        .item{
+            float: left;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin:20px 20px 0 0;
+            background-color: pink;
+        }
+        /* 使用选择器重置最后一列格子右边距为0 */
+        .item:nth-child(3n){
+            margin-right: 0;
+        }
+        /* 重置第一行格子的上边距为0 */
+        .item:nth-child(-n+3){
+            margin-top: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="coontainer clearfix">
+        <!-- n个如下的div -->
+        <div class="item">item</div>
+    
+        <div class="item">item</div>
+
+        <div class="item">item</div>
+        <div class="item">item</div>
+
+
+    </div>
+</body>
+</html>

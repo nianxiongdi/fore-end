@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // user agent
+        // Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 这代表为浏览器 chrome
+        /*
+            Mozilla/5.0 - 兼容Mozillade 用户代理及其版本。 历史遗留，对现代浏览器没有实际意义。
+            Intel Mac OS X 10_13_6 - 操作系统 及其版本
+            AppleWebKit/537.36 - web kit及其构建版本
+            KHTML, like Gecko - 开源的html布局引擎
+            Chrome/74.0.3729.169 - 浏览器名称和版本
+            Safari/537.36 - 浏览器名称和版本
+        */
+        console.log(navigator.userAgent);
+
+
+        // 时区
+        // getTimezoneOffset(计算的时时gmt与你时区之间的差值， 因此计算出来为负值) 返回的时与gmt之前的差值，单位 分钟
+        // gmt - 指格林尼治所在地的标准时间，也是表示地球自转速率的一种形式。
+        const offset = new Date().getTimezoneOffset() / 60 * -1;
+        console.log(offset)
+
+        // resolution - 屏幕分辨率 时浏览器指纹的重要指标
+        const width = window.screen.width;
+        const height = window.screen.height;
+        console.log(width, height)
+
+        // 浏览器插件
+        // http://www.pinlady.net/PluginDetect/ -- 也可以通过这个检测
+        const plugins = navigator.plugins;
+        for(let i=0; i<plugins.length; i++) {
+            console.log(plugins[i].name)
+        }
+        
+        // 位置追踪 还可以用gps
+
+        function success(position) {
+            console.log('lat:' + position.coords.latitude);
+            console.log('lon:' + position.coords.longitude);
+        }
+        function failure(err) {
+            console.log(err);
+        }
+
+        // 判断浏览器 是否支持
+        if('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition(success, failure, {timeout: 10000})
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
