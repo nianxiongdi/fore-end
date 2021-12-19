@@ -1,0 +1,15 @@
+CACHE MANIFEST
+
+#  缓存文件
+CACHE:
+index.js
+index.css
+4.jpg
+
+# 不需要缓存的文件 在此标题下列出的文件与服务器连接,且不会被缓存
+NETWORK:
+*
+
+# 表示替代资源，这些资源加载不到就替代加载哪些资源
+FALLBACK:
+404.html
