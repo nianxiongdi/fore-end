@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="content">
+
+    </ul>
+    <input type="text" id="msg" />
+    <button onclick="send()">发送</button>
+    <script>
+        var ws = new WebSocket('ws://localhost:8080');
+        var dom = document.getElementById('msg');
+        var content = document.getElementById('content');
+        // 监听建立连接
+        ws.onopen = function(res) {
+            console.log('success');
+            console.log(res);
+        }
+
+        // 接受信息的时候
+        ws.onmessage = function(res) {
+            console.log('有新信息');
+            content.innerHTML += '<li>' + res.data +'</li>'
+            // console.log(res);
+        }
+
+        function send() {
+            ws.send(dom.value);
+        }
+
+    </script>
+</body>
+</html>
