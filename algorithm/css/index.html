@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <button data-name="西瓜" id="watermelon">西瓜</button>
+        <button data-name="苹果" id="apple">苹果</button>
+    <script>
+     let watermelon = document.getElementById('watermelon');
+     let apple = document.getElementById('apple');
+     Function.prototype.after = function(afterFn){
+        let _this = this;
+        return function(){
+             _this.apply(this,arguments);
+            afterFn.apply(this,arguments);
+        }
+    }
+    
+     function click(){
+         console.log('点击'+this.dataset.name);
+     }
+     click = click.after(function(){
+         let img = new Image();
+         img.src = `http://localhost:3000?name=${this.dataset.name}`;
+     });
+     Array.from(document.querySelectorAll('button')).forEach(function(button){
+        button.addEventListener('click',click);
+     });
+    </script>
+</body>
+</html>

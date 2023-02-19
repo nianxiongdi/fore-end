@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes slidein {
+            0% {
+                transform: rotate(10deg) translate(-20px, -0px);
+            }
+            /* 40% {
+                transform: rotate(10deg) translate(120px, -0px);
+            } */
+            100% {
+                transform: rotate(10deg) translate(220px, -0px);
+            }
+        }
+
+        .light-animation {
+            position: absolute;
+            background: linear-gradient(-90deg,#ffffff4d,rgba(255,255,255,1),rgba(255,255,255,.3));
+            width: 17px;
+            height: 120px;
+            top: -50px;
+            opacity: 0.8;
+            transform: rotate(30deg) translate(-30px, -10px);
+            animation: 3s infinite 0s slidein;
+        }
+
+        .box {
+            width: 200px;
+            height: 50px;
+            background-color: orange;
+        }
+
+        /*
+            .light-animation {
+                position: absolute;
+                background: linear-gradient(-90deg,rgba(255,255,255,.3),rgba(255,255,255,1),rgba(255,255,255,.3));
+                width: 17px;
+                height: 120px;
+                top: -10px;
+                opacity: 0.8;
+                transform: rotate(30deg) translate(-30px, -10px);
+                animation: 3s infinite 0s slidein;
+            }        
+        */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="light-animation"></div>
+    </div>
+</body>
+</html>
