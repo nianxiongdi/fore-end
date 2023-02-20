@@ -19,7 +19,14 @@
                 // button.classList.add("button");
                 // this.append(button);
             }
+            /*
+            
+                在这个自定义元素的构造函数中，你创建了一个 div 元素，
+                并将其附加到自定义元素上，这意味着在创建元素的同时就添加了子元素。
+                根据自定义元素规范，这是不允许的，因此会引发错误。
 
+            */
+           // 。这个方法会在自定义元素第一次添加到文档中时被调用，因此此时添加子元素是安全的。
             connectedCallback() {
                 var button = document.createElement("div");
                 button.innerText = "我是自定义组件内容";
