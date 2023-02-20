@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // https://github.com/misitebao/demo-web-components/blob/main/custom-button.js
+        // https://juejin.cn/post/7017458435323232264
+        class Button extends HTMLElement {
+            constructor() {
+                super();
+
+                // var button = document.createElement("div");
+                // button.innerText = "我是自定义组件内容";
+                // button.classList.add("button");
+                // this.append(button);
+            }
+
+            connectedCallback() {
+                var button = document.createElement("div");
+                button.innerText = "我是自定义组件内容";
+                button.classList.add("button");
+
+                this.append(button);
+            }
+        }
+        customElements.define('custom-button', Button);
+        
+    </script>
+       
+    <div>
+        <custom-button ></my-component>
+    </div>
+</body>
+</html>
