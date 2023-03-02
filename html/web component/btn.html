@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Button Example</title>
+  <style>
+    /* 定义 cool-button 元素的样式 */
+    cool-button {
+      display: inline-block;
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- 
+    使用如下的代码不生效，需要使用is
+    <cool-button color="orange" radius="100px !important" >Hello World</cool-button> 
+-->
+    <button is="cool-button"   >Hello World</button>
+    <script>
+        // 定义 CoolButton 类
+        class CoolButton extends HTMLButtonElement {
+          constructor() {
+            super();
+            console.log('>>> this', 123)
+            // 获取元素属性
+            const color = this.getAttribute('color') || 'blue';
+            const radius = this.getAttribute('radius') || '5px';
+
+            // 设置元素样式
+            this.style.backgroundColor = color;
+            this.style.borderRadius = radius;
+            this.style.color = 'white';
+            this.style.padding = '10px';
+            this.style.cursor = 'pointer';
+ 
+          }
+        }
+    
+        // 注册自定义元素
+        customElements.define('cool-button', CoolButton, { extends: 'button' });
+      </script>
+</body>
+
+</html>

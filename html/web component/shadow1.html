@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shadow DOM Example</title>
+    <style>
+      /* 主文档样式不会影响到影子DOM树内的样式 */
+      my-element {
+        display: block;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid red;
+      }
+
+      /* 影子DOM树内的样式只会影响到my-element元素内部 */
+      my-element::slotted(p) {
+        display: block;
+        margin: 101px;
+        padding: 10px;
+        border: 1px solid blue ;
+      }
+    </style>
+  </head>
+  <body>
+    <my-element></my-element>
+
+    <script>
+      class MyElement extends HTMLElement {
+        constructor() {
+          super();
+
+          // 创建影子DOM树，并设置其mode为closed
+          const shadowRoot = this.attachShadow({ mode: 'open' });
+
+          // 创建一个子元素，并添加到影子DOM树中
+          const childElement = document.createElement('p');
+          childElement.textContent = 'This is a child element in the shadow DOM tree';
+          shadowRoot.appendChild(childElement);
+        }
+      }
+
+      // 注册自定义元素
+      customElements.define('my-element', MyElement);
+    </script>
+  </body>
+</html>

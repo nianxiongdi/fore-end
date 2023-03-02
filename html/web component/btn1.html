@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Element Example</title>
+</head>
+<body>
+  <my-element></my-element>
+
+  <script>
+    // 定义 MyElement 类
+    class MyElement extends HTMLElement {
+      constructor() {
+        super();
+
+        // 创建 Shadow DOM
+        const shadow = this.attachShadow({ mode: 'open' });
+
+        // 创建元素
+        const button = document.createElement('button');
+        button.textContent = 'Click Me';
+        const p = document.createElement('p');
+        p.textContent = 'Hello World';
+        
+        // 将元素添加到 Shadow DOM 中
+        shadow.appendChild(button);
+        shadow.appendChild(p);
+
+        // 监听按钮单击事件
+        button.addEventListener('click', () => {
+          p.textContent = 'Button Clicked!';
+        });
+      }
+    }
+
+    // 注册自定义元素
+    customElements.define('my-element', MyElement);
+  </script>
+</body>
+</html>

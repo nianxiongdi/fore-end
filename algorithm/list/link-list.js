@@ -16,6 +16,8 @@ ListNode.prototype.createListHead = function(arr) {
         node.next = head.next
         head.next = node
     }
+
+	return head
 }
 
 // 1. 尾插法
@@ -239,6 +241,36 @@ ListNode.prototype.merge2 = function (A, B) {
         return B
     }
 }
+
+// 13. 删除重复的元素
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+    输入：head = [1,1,2]
+    输出：[1,2]
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+// 无头结点
+ var deleteDuplicates = function(head) {
+	let p = head;
+	while(p) {
+		let t = p.next || {}
+		if (p.val === t.val) {
+			p.next = t.next;
+			t = null
+		}else {
+		    p = p.next
+        }
+	}
+	return head
+};;
 
 const head = new ListNode('', null)
 

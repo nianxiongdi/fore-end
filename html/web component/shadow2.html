@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shadow DOM Example</title>
+  </head>
+  <body>
+    <my-element id="me"></my-element>
+
+    <script>
+      class MyElement extends HTMLElement {
+        constructor() {
+          super();
+
+          // 创建一个 Shadow DOM 树，mode 为 'closed'
+          const shadowRoot = this.attachShadow({ mode: 'open' });
+
+          // 在 Shadow DOM 树内部创建一个文本节点
+          const textNode = document.createTextNode('This is a text node in the shadow DOM tree');
+          shadowRoot.appendChild(textNode);
+        }
+      }
+
+      // 注册自定义元素
+      customElements.define('my-element', MyElement);
+    </script>
+  </body>
+</html>

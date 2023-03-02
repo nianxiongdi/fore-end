@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <my-element>
+        <p>这是插入到插槽中的文本内容</p>
+    </my-element>
+      
+    <template>
+        <style>
+          button {
+            background-color: #00bcd4;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 16px;
+          }
+        </style>
+        <slot></slot>
+        <button>点击我</button>
+      </template>
+      
+      <script>
+        class MyElement extends HTMLElement {
+          constructor() {
+            super();
+      
+            // 创建影子DOM树，并设置其mode为open
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+      
+            // 获取模板元素的内容
+            const template = document.querySelector('template');
+            const content = template.content;
+      
+            // 克隆模板内容并添加到影子DOM树中
+            const clone = content.cloneNode(true);
+            shadowRoot.appendChild(clone);
+            
+            // 在 Shadow DOM 中查找按钮元素并绑定事件
+            const button = shadowRoot.querySelector('button');
+            button.addEventListener('click', () => {
+              console.log('按钮被点击了！');
+            });
+          }
+        }
+      
+        customElements.define('my-element', MyElement);
+      </script>
+      
+</body>
+</html>

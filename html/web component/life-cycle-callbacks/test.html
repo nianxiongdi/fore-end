@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adopted Custom Element Example</title>
+  </head>
+  <body>
+   <!-- another.html -->
+   <p>Another Document</p>
+   <div id="container"></div>
+
+   <script>
+        // custom-element.js
+        class MyCustomElement extends HTMLElement {
+            constructor() {
+                super();
+                console.log('MyCustomElement constructor called');
+            }
+
+            connectedCallback() {
+                console.log('MyCustomElement connected');
+            }
+
+            disconnectedCallback() {
+                console.log('MyCustomElement disconnected');
+            }
+
+            adoptedCallback() {
+                console.log('MyCustomElement adopted');
+            }
+        }
+
+        customElements.define('my-custom-element', MyCustomElement);
+
+    </script>
+
+    <script>
+        // another.js
+        const container = document.querySelector('#container');
+        const customElement = document.createElement('my-custom-element');
+
+        // 将自定义元素添加到文档中
+        container.appendChild(customElement);
+
+        // 移动自定义元素到另一个文档中
+        const newDocument = document.implementation.createHTMLDocument();
+        const clonedCustomElement = customElement.cloneNode(true);
+        newDocument.body.appendChild(clonedCustomElement);
+        document.adoptNode(clonedCustomElement);
+
+    </script>
+  </body>
+</html>

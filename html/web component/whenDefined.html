@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Element Example</title>
+  <script>
+    customElements.whenDefined('my-element').then(() => {
+      console.log('my-element is defined!');
+    });
+
+    customElements.define('my-element', class extends HTMLElement {
+      constructor() {
+        super();
+        console.log('my-element constructor');
+      }
+    });
+  </script>
+</head>
+<body>
+  <my-element></my-element>
+  <my-element></my-element>
+
+</body>
+</html>

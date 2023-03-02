@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <template id="my-template">
+        <style>
+          .my-component {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+          }
+        </style>
+        <div class="my-component">
+          <h2><slot name="title">Default Title</slot></h2>
+          <p><slot name="content">Default Content</slot></p>
+        </div>
+      </template>
+      
+      <my-component>
+        <div slot="title">Hello World</div>
+        <div slot="content">This is my custom component</div>
+      </my-component>
+      <script>
+        class MyComponent extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('my-template');
+    const templateContent = template.content.cloneNode(true);
+    const shadowRoot = this.attachShadow({mode: 'open'});
+    shadowRoot.appendChild(templateContent);
+  }
+}
+
+customElements.define('my-component', MyComponent);
+
+      </script>
+</body>
+</html>
