@@ -32,8 +32,8 @@ var preorderTraversal = function(root) {
     while(cur) {
         mostRight = cur.left;
         // 走到叶子节点的时候
-        if(mostRight === null){
-            result.push(cur.val);
+        if(mostRight === null){ // 第一次打印
+            result.push(cur.val); 
             cur = cur.right;
         }else {
             while(mostRight.right!==null && mostRight.right !== cur) {
