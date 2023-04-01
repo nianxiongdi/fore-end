@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
-    "jquery": "^2.2.4"
+    "jquery": "^3.5.0"
   },
   "peerDependencies": {},
   "optionalDependencies": {},
