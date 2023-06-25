@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>z-index为0或auto</title>
+  <style>
+    .red,
+    .blue{
+      width: 200px;
+      height: 200px;
+    }
+
+    .red {
+      position: absolute;
+      z-index: 0;
+      top: 100px;
+      left: 100px;
+      background: #FF0000;
+    }
+    .blue {
+      position: absolute;
+      z-index: auto;
+      top: 40px;
+      left: 40px;
+      background: #0000FF;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="blue">index-auto</div>
+  <div class="red">
+    index-0
+  </div>
+</body>
+</html>

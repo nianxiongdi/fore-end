@@ -1,0 +1,28 @@
+<style>
+  .box,
+  .item {
+    width: 100px;
+    height: 100px;
+  }
+  /*box为创建层叠上下文元素*/
+  .box {
+    background-color: skyblue;
+    border: 10px solid khaki;
+    position: relative;
+    z-index: 0; /*创建层叠上下文-关键代码*/
+    /* z-index: auto; */
+  }
+  .item {
+    background-color: pink;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    /*元素的层级*/
+    z-index: -1;
+  }
+</style>
+<body>
+  <div class="box">
+    <div class="item"></div>
+  </div>
+</body>

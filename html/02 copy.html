@@ -1,0 +1,31 @@
+<div class="parent">
+    <div class="child1">Child1</div>
+    <div class="child2">Child2</div>
+  </div>
+<style>
+    .parent {
+  position: relative;
+  z-index: 1;
+}
+
+.child1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 2;
+}
+
+.child2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  z-index: auto;
+}
+
+</style>

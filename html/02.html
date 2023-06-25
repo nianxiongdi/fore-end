@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>层叠上下文示例</title>
+  <style>
+    /* 外层容器 */
+    .outer {
+      position: relative;
+      z-index: 1;
+      width: 400px;
+      height: 200px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
+    
+    /* 第一个层叠上下文 */
+    .layer1 {
+      position: absolute;
+      z-index: 3;
+      top: 10px;
+      left: 10px;
+      width: 100px;
+      height: 100px;
+      background-color: #ff0000;
+    }
+    
+    /* 第二个层叠上下文 */
+    .layer2 {
+      position: relative;
+      z-index: 2;
+      width: 200px;
+      height: 200px;
+      background-color: #00ff00;
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+    /* https://jsfiddle.net/ramcdvns/3/ */
+    /* https://juejin.cn/post/6844903941755551758 */https://zhuanlan.zhihu.com/p/33984503
+    /* 第三个层叠上下文 */ juejin.cn/post/6995006409423192078z-index:%200和z-index:%20auto的区别
+    https://juejin.cn/post/6844903941755551758#heading-2
+    .layer3 {
+        position: absolute;  
+        z-index: 4;
+        top: 50px;
+        left: 16px;
+        width: 147px;
+        height: 100px;
+        background-color: #0000ff;
+        transform: rotate(30deg);
+        transform: translateZ(0px);
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="layer1"></div>
+    <div class="layer2">
+      <div class="layer3"></div>
+    </div>
+  </div>
+</body>
+</html>

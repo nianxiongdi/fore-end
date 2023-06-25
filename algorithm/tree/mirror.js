@@ -36,7 +36,7 @@ var preorderTraversal = function(root) {
             result.push(cur.val); 
             cur = cur.right;
         }else {
-            while(mostRight.right!==null && mostRight.right !== cur) {
+            while(mostRight.right!==null && mostRight.right !== cur) { // 第二次找到  
                 // 这个while循环就是寻找最右边的节点
                 mostRight = mostRight.right;
             }
@@ -47,6 +47,9 @@ var preorderTraversal = function(root) {
                 // result.push(cur.val);
                 cur = cur.left;
             }else if(mostRight.right === cur) { //找到链接第二次打印
+                // 两种逻辑会走到这里
+                // 1. 根节点与父节点
+                // 2. 父节点与叶子节点
                 result.push(cur.val);
 
                 // 是
@@ -55,11 +58,11 @@ var preorderTraversal = function(root) {
             }
         }
     }
-    return result;
+    return result;  
  }; 
 
-const tree = createTreeNode([1,2,3,4,5,6, 7, 8, 9], 0)
+const tree = createTreeNode([1,2,3,4,5,6, 7 ], 0)
 // const tree = createTreeNode([1,null,2,3], 0)
 
-console.log(tree)
+// console.log(tree)
 console.log(preorderTraversal(JSON.parse(JSON.stringify(tree))))

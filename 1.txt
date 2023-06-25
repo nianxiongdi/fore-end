@@ -1,0 +1,9 @@
+题目很简单可能是面试官看我比较菜不好意思为难我。 用正则将数字匹配出来加一
+
+let str = 'sadawdwa1232sadawd132c';
+let newStr = str.replace(/(\w+)(\d{4})(\w+)(\d{3})(\w+)/,function(match,p1,p2,p3,p4,p5){
+    p2=p2-0+1;
+    p4=p4-0+1
+    return p1+p2+p3+p4+p5
+})
+console.log(newStr);
