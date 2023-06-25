@@ -18,4 +18,4 @@
 };
 
 
-console.log(longestCommonPrefix(["1flower","flow","flight"]));
+console.log(longestCommonPrefix(["1flower","flow","flight"])); 
