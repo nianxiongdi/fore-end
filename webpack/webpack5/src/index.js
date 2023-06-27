@@ -1,13 +1,20 @@
+// import a from "a";
 
-// btn.addEventListener('click',()=>{
-//   //如果代码里出现了import方法调用,会自动进行代码分割
-//   import(/* webpackChunkName: "title" */ "./title").then((result) => {
-//   console.log(result);
-//   });
+// import("b").then(function(b) {
+// 	console.log("b loaded", b);
+// })
+
+// function loadC(name) {
+// 	return import("c/" + name);
+// }
+
+// Promise.all([loadC("1"), loadC("2")]).then(function(arr) {
+// 	console.log("c/1 and c/2 loaded", arr);
 // });
 
 
-
-let title = require("./title")
-
-console.log(title);
+btn.addEventListener("click", () => {
+    import(/* webpackChunkName: "hello" */ "./title").then((result) => {
+        console.log(result.default);
+    });    
+})

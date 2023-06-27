@@ -37,5 +37,5 @@
 
 
 
- nums = [5,2,3,1]
+nums = [5,2,3,1]
 console.log( sortArray(nums));
