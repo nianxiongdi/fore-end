@@ -5,11 +5,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const babelLoader = path.join(__dirname, 'loaders/babel-loader')
+const LessLoader = path.join(__dirname, 'loaders/less-loader2')
 
 module.exports = {
   mode: "development", // 打包模式
   // entry: "./src/index.js",
-  entry: "./src/file.js",
+  // entry: "./src/file.js",
+  entry: './src/css.js',
 
   devtool: "source-map", //不生成source-map
   output: {
@@ -24,11 +26,12 @@ module.exports = {
       test: /\.js$/,
       use: [{
         // loader: babelLoader, options: {}
-        loader: 'babel-loader', options: {
+        loader: 'babel-loader', 
+        options: {
           presets:[
             "@babel/preset-env"
           ],
-          sourceMap: true
+          sourceMap: false
         }
       }]
     }, {
@@ -39,6 +42,14 @@ module.exports = {
       type: 'asset/source'
 
 
+    }, {
+      test:/\.less$/,
+      // loader: LessLoader
+      use: [
+        'style-loader2',
+        'css-loader2',
+        'less-loader2'
+      ]
     }]
   }, 
   plugins: [

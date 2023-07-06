@@ -2,7 +2,7 @@
 
 
 
-// require('../img/1.jpeg')
+require('../img/1.jpeg')
 
 
-require('./index.js')
+// require('./index.js')

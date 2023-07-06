@@ -1,17 +1,31 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ (() => {
+/***/ "./loaders/css-loader2.js!./loaders/less-loader2.js!./src/index.less":
+/*!***************************************************************************!*\
+  !*** ./loaders/css-loader2.js!./loaders/less-loader2.js!./src/index.less ***!
+  \***************************************************************************/
+/***/ ((module) => {
 
-// const fun = (a,b) => a + b;
+module.exports = `
+.box {
+  color: red;
+}
+`
 
-// fun(1, 2) 
+/***/ }),
 
-console.log(123);
+/***/ "./src/index.less":
+/*!************************!*\
+  !*** ./src/index.less ***!
+  \************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
+     let style = document.createElement('style');
+     style.innerHTML = __webpack_require__(/*! !!../loaders/css-loader2.js!../loaders/less-loader2.js!./index.less */ "./loaders/css-loader2.js!./loaders/less-loader2.js!./src/index.less");
+     document.head.appendChild(style);
+   
 
 /***/ })
 
@@ -45,12 +59,18 @@ console.log(123);
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*********************!*\
-  !*** ./src/file.js ***!
-  \*********************/
-// require('../img/1.jpeg')
+/*!********************!*\
+  !*** ./src/css.js ***!
+  \********************/
+// import './index.less'
 
-__webpack_require__(/*! ./index.js */ "./src/index.js");
+__webpack_require__(/*! ./index.less */ "./src/index.less");
+
+// import API from "!../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js";
+
+// import { a } from './index'
+
+// import './index.css'
 })();
 
 /******/ })()
