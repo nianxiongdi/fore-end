@@ -5,14 +5,14 @@ const compiler = webpack(webpackOptions);
   debugger
 //4.执行对象的run方法开始执行编译
 compiler.run((err, stats) => {
-    console.log(err);
-    console.log(stats.toJson(
-        {
-            assets: true,
-            chunks: true,
-            modules: true,
-            entries: true,
-        }
-    ));
+    // console.log(err);
+    // console.log(stats.toJson(
+    //     {
+    //         assets: true,
+    //         chunks: true,
+    //         modules: true,
+    //         entries: true,
+    //     }
+    // ));
 });
 // https://zhufeng-document.vercel.app/html/103.4.webpack-flow.html
