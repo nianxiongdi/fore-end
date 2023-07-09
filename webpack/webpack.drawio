@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-09T11:57:13.598Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="x0SYaanaS4L-1xMX5seP" version="21.6.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-09T14:04:57.846Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="3_J60juW3RS4F08oA-np" version="21.6.1" type="github" pages="2">
   <diagram name="webpack-flow" id="fdhdS6sps6q3KNE02XbI">
     <mxGraphModel dx="1050" dy="493" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -65,10 +65,131 @@
     </mxGraphModel>
   </diagram>
   <diagram id="eV4McjKStu1JCMHGYiAI" name="tapable">
-    <mxGraphModel dx="1050" dy="493" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1050" dy="493" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="QecImfrMoRwAbg1fv6P1-2" value="&lt;b&gt;SyncHook&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="603" y="498" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-3" value="&lt;b&gt;Hook&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="603" y="565" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-2" target="QecImfrMoRwAbg1fv6P1-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="819" y="623" as="sourcePoint" />
+            <mxPoint x="869" y="573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-6" target="QecImfrMoRwAbg1fv6P1-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="972" y="742" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-6" value="&lt;b&gt;初始化参数&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="603" y="629" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-3" target="QecImfrMoRwAbg1fv6P1-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="675" y="834" as="sourcePoint" />
+            <mxPoint x="725" y="784" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-8" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;constructor(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;name&lt;/span&gt;) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;_args&lt;/span&gt; = &lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;name&lt;/span&gt; = &lt;span style=&quot;color: #9cdcfe;&quot;&gt;name&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;taps&lt;/span&gt; = []&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;_x&lt;/span&gt; = []&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;call&lt;/span&gt; = &lt;span style=&quot;color: #4ec9b0;&quot;&gt;CALL_DELEGATE&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;_call&lt;/span&gt; - &lt;span style=&quot;color: #4ec9b0;&quot;&gt;CALL_DELEGATE&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;compile&lt;/span&gt; = &lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;compile&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1091" y="701" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-11" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#000033&quot; style=&quot;background-color: rgb(255, 255, 255);&quot; face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;b&gt;new SyncHookCodeFactory()&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="558" y="693" width="176" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-13" value="&lt;b&gt;create&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="603" y="751" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-6" target="QecImfrMoRwAbg1fv6P1-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="656" y="605" as="sourcePoint" />
+            <mxPoint x="656" y="639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-11" target="QecImfrMoRwAbg1fv6P1-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="666" y="615" as="sourcePoint" />
+            <mxPoint x="666" y="649" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-16" value="&lt;b&gt;sync&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="492" y="806" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-17" target="QecImfrMoRwAbg1fv6P1-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-17" value="&lt;b&gt;promise&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="714" y="806" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-18" target="QecImfrMoRwAbg1fv6P1-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-18" value="&lt;b&gt;async&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="601" y="806" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-20" value="&lt;b&gt;new Function(arg， code)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="562" y="883" width="164" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.616;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-13" target="QecImfrMoRwAbg1fv6P1-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="656" y="733" as="sourcePoint" />
+            <mxPoint x="656" y="761" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-13" target="QecImfrMoRwAbg1fv6P1-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="666" y="743" as="sourcePoint" />
+            <mxPoint x="666" y="771" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-13" target="QecImfrMoRwAbg1fv6P1-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="676" y="753" as="sourcePoint" />
+            <mxPoint x="676" y="781" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-16" target="QecImfrMoRwAbg1fv6P1-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="767" y="846" as="sourcePoint" />
+            <mxPoint x="524" y="913" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-34" value="&lt;b&gt;执行&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="601" y="960" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-20" target="QecImfrMoRwAbg1fv6P1-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="851" y="1094" as="sourcePoint" />
+            <mxPoint x="901" y="1044" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-38" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;SyncHook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = [], &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;undefined&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;Hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;constructor&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;SyncHook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;tapAsync&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;TAP_ASYNC&lt;/span&gt;; // 这个函数为throw new Error(&quot;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;tapAsync is not supported on a SyncHook&lt;/span&gt;&quot;)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;tapPromise&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;TAP_PROMISE&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;; //&amp;nbsp;&lt;/span&gt;throw&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;Error&lt;/span&gt;&lt;span style=&quot;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&quot;tapPromise is not supported on a SyncHook&quot;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;compile&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;COMPILE&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;hook&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="764" y="421" width="804" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-2" target="QecImfrMoRwAbg1fv6P1-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="647" y="478" as="sourcePoint" />
+            <mxPoint x="697" y="428" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-40" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#000033&quot;&gt;&lt;b&gt;HookCodeFactory - 代码整合&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="289" y="693" width="208" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-41" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QecImfrMoRwAbg1fv6P1-40" target="QecImfrMoRwAbg1fv6P1-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="515" y="831" as="sourcePoint" />
+            <mxPoint x="565" y="781" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QecImfrMoRwAbg1fv6P1-42" value="j继承" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QecImfrMoRwAbg1fv6P1-41">
+          <mxGeometry x="-0.1541" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
