@@ -25,14 +25,14 @@ module.exports = {
     rules: [ {
       test: /\.js$/,
       use: [{
-        // loader: babelLoader, options: {}
-        loader: 'babel-loader', 
-        options: {
-          presets:[
-            "@babel/preset-env"
-          ],
-          sourceMap: false
-        }
+        loader: babelLoader, options: {}
+        // loader: 'babel-loader', 
+        // options: {
+        //   presets:[
+        //     "@babel/preset-env"
+        //   ],
+        //   sourceMap: false
+        // }
       }]
     }, {
       // test:/\.(jpg|jpeg|png|gif|bmp)$/,
