@@ -1,0 +1,16 @@
+{
+  "name": "asyncQueue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production --watch",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode production --watch"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {}
+}
