@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-14T01:14:05.722Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="5Py1adu1ML-ZbUvilEr9" version="21.6.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-07-14T01:18:05.098Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="4NoWr-SG7xxekR9slO6A" version="21.6.2" type="github" pages="3">
   <diagram name="webpack-flow" id="fdhdS6sps6q3KNE02XbI">
     <mxGraphModel dx="1050" dy="527" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -280,7 +280,7 @@
           <mxGeometry x="227" y="1520" width="115" height="32" as="geometry" />
         </mxCell>
         <mxCell id="oAYDTfELaNIXaBaJlYv9-30" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;addModule&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;html=1;fontColor=default;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="222.5" y="1657" width="115" height="32" as="geometry" />
+          <mxGeometry x="232.75" y="1726" width="115" height="32" as="geometry" />
         </mxCell>
         <mxCell id="oAYDTfELaNIXaBaJlYv9-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oAYDTfELaNIXaBaJlYv9-31" target="oAYDTfELaNIXaBaJlYv9-32">
           <mxGeometry relative="1" as="geometry" />
@@ -288,8 +288,11 @@
         <mxCell id="oAYDTfELaNIXaBaJlYv9-31" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;factory.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;create&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;html=1;fontColor=default;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="224.5" y="1593" width="115" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="oAYDTfELaNIXaBaJlYv9-32" value="创建module,是使用NormalModuleFactory进行创建的，" style="rounded=1;html=1;fontColor=#000000;whiteSpace=wrap;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="29.5" y="1593" width="115" height="32" as="geometry" />
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-32" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;创建module,是使用NormalModuleFactory进行创建的，内部会触发this&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;hooks&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;.钩子&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;factorize，该钩子内部会触发&lt;/span&gt;this&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;hooks&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;.，用来路径解析使用的&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;resolve&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;html=1;fontColor=#000000;whiteSpace=wrap;strokeColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="22" y="1558.5" width="168.5" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-34" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;new &lt;span style=&quot;color: #4ec9b0;&quot;&gt;NormalModule&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;html=1;fontColor=default;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="224.5" y="1651" width="131.5" height="32" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
