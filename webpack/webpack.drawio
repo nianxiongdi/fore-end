@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-14T01:59:43.805Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="TyLRAmGJY2YWpppjKMu_" version="21.6.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-07-14T02:02:14.048Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="vAHddLt_XlBqOmA4ZAEr" version="21.6.2" type="github" pages="3">
   <diagram name="webpack-flow" id="fdhdS6sps6q3KNE02XbI">
     <mxGraphModel dx="1050" dy="527" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -390,8 +390,28 @@
         <mxCell id="oAYDTfELaNIXaBaJlYv9-70" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;blockPreWalkImportDeclaration&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=1;labelBackgroundColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="881" y="2652.5" width="244.62" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="oAYDTfELaNIXaBaJlYv9-72" value="HarmonyImportDependencyParserPlugin" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1262.199951171875" y="2698" width="247" height="36" as="geometry" />
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-74" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;HarmonyImportDependencyParserPlugin&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=1;labelBackgroundColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1241" y="2610.5" width="244.62" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-75" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;CommonJsImportsParserPlugin&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=1;labelBackgroundColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1241" y="2694.5" width="244.62" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-76" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oAYDTfELaNIXaBaJlYv9-70" target="oAYDTfELaNIXaBaJlYv9-74">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1197" y="2755" as="sourcePoint" />
+            <mxPoint x="1247" y="2705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-77" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oAYDTfELaNIXaBaJlYv9-70" target="oAYDTfELaNIXaBaJlYv9-75">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1197" y="2755" as="sourcePoint" />
+            <mxPoint x="1247" y="2705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oAYDTfELaNIXaBaJlYv9-78" value="处理钩子" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oAYDTfELaNIXaBaJlYv9-77">
+          <mxGeometry x="0.1013" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
