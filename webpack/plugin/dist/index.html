@@ -1,12 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="./index.js" ></script>
-<script defer src="bundle.js"></script></head>
-<body>
-</body>
-</html>
+<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'e:\learn\src\index.html' in 'e:\learn'  ModuleNotFoundError: Module not found: Error: Can't resolve 'e:\learn\src\inde  x.html' in 'e:\learn'
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\Compilation.j  s:2022:28
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:817:13
+      at eval (eval at create (e:\learn\fore-end\webpack\plugin\node_modules\tap  able\lib\HookCodeFactory.js:33:10), <anonymous>:8:1)
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:275:22
+      at eval (eval at create (e:\learn\fore-end\webpack\plugin\node_modules\tap  able\lib\HookCodeFactory.js:33:10), <anonymous>:7:1)
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:448:22
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:122:11
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:689:25
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:893:8
+      at e:\learn\fore-end\webpack\plugin\node_modules\webpack\lib\NormalModuleF  actory.js:1013:5
+  
+  - Compilation.js:2022 
+    [plugin]/[webpack]/lib/Compilation.js:2022:28
+  
+  - NormalModuleFactory.js:817 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:817:13
+  
+  
+  - NormalModuleFactory.js:275 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:275:22
+  
+  
+  - NormalModuleFactory.js:448 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:448:22
+  
+  - NormalModuleFactory.js:122 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:122:11
+  
+  - NormalModuleFactory.js:689 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:689:25
+  
+  - NormalModuleFactory.js:893 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:893:8
+  
+  - NormalModuleFactory.js:1013 
+    [plugin]/[webpack]/lib/NormalModuleFactory.js:1013:5
+  
+  - child-compiler.js:169 
+    [plugin]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [plugin]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [plugin]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1200 
+    [plugin]/[webpack]/lib/Compiler.js:1200:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [plugin]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1196 
+    [plugin]/[webpack]/lib/Compiler.js:1196:33
+  
+  - Compilation.js:2795 finalCallback
+    [plugin]/[webpack]/lib/Compilation.js:2795:11
+  
+  - Compilation.js:3100 
+    [plugin]/[webpack]/lib/Compilation.js:3100:11
+  
+  
+</pre>

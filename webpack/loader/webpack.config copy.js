@@ -13,7 +13,7 @@ module.exports = {
   // entry: "./src/file.js",
   // entry: './src/css.js',
 
-  devtool: 'source-map', // 使用 source-map 生成 SourceMap
+  devtool: 'hidden-source-map', // 使用 source-map 生成 SourceMap
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -25,14 +25,14 @@ module.exports = {
     rules: [ {
       test: /\.js$/,
       use: [{
-        // loader: babelLoader, options: {}
-        loader: 'babel-loader', 
-        options: {
-          presets:[
-            "@babel/preset-env"
-          ]
-          // sourceMap: false
-        }
+        loader: babelLoader, options: {}
+        // loader: 'babel-loader', 
+        // options: {
+        //   presets:[
+        //     "@babel/preset-env"
+        //   ],
+        //   sourceMap: false
+        // }
       }]
     }, {
       // test:/\.(jpg|jpeg|png|gif|bmp)$/,

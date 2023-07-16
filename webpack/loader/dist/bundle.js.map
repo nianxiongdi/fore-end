@@ -1,1 +1,18 @@
-{"version":3,"file":"bundle.js","mappings":";;;;;;;;;AAAA;AACA;AACA;AACA;AACA;;;;;;;;;;;ACHA;AACA,uBAAuB,mBAAO,CAAC,gJAAqE;AACpG;AACA;;;;;;UCJA;UACA;;UAEA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;;UAEA;UACA;;UAEA;UACA;UACA;;;;;;;;;;;;ACpBA;;AAEAA,mBAAO,CAAC,sCAAc,CAAC;;AAGvB;;AAGA;;AAEA,uB","sources":["webpack://loader/./src/index.less","webpack://loader/./src/index.less?a4e4","webpack://loader/webpack/bootstrap","webpack://loader/unknown"],"sourcesContent":["module.exports = `\n.box {\n  color: red;\n}\n`","\n     let style = document.createElement('style');\n     style.innerHTML = require(\"!!../loaders/css-loader2.js!../loaders/less-loader2.js!./index.less\");\n     document.head.appendChild(style);\n   ","// The module cache\nvar __webpack_module_cache__ = {};\n\n// The require function\nfunction __webpack_require__(moduleId) {\n\t// Check if module is in cache\n\tvar cachedModule = __webpack_module_cache__[moduleId];\n\tif (cachedModule !== undefined) {\n\t\treturn cachedModule.exports;\n\t}\n\t// Create a new module (and put it into the cache)\n\tvar module = __webpack_module_cache__[moduleId] = {\n\t\t// no module.id needed\n\t\t// no module.loaded needed\n\t\texports: {}\n\t};\n\n\t// Execute the module function\n\t__webpack_modules__[moduleId](module, module.exports, __webpack_require__);\n\n\t// Return the exports of the module\n\treturn module.exports;\n}\n\n","\r\n\r\n// import './index.less'\r\n\r\nrequire('./index.less')\r\n\r\n \r\n// import API from \"!../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\";\r\n \r\n\r\n// import { a } from './index'\r\n\r\n// import './index.css'"],"names":["require"],"sourceRoot":""}
+{
+    "version": 3,
+    "file": "bundle.js",
+    "mappings": "AASAA,QAAQC,IAPGC,GAQXC,EACAH,QAAQC,IALGC",
+    "sources": [
+        "webpack://loader/./src/index.js"
+    ],
+    "sourcesContent": [
+        "// index.js\r\nfunction add(a, b) {\r\n    return a + b;\r\n}\r\n\r\nfunction subtract(a, b) {\r\n    return a - b;\r\n}\r\n\r\nconsole.log(add(5, 3));\r\nc\r\nconsole.log(subtract(10, 4));\r\n"
+    ],
+    "names": [
+        "console",
+        "log",
+        "a",
+        "c"
+    ],
+    "sourceRoot": ""
+}

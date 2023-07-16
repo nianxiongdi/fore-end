@@ -34,16 +34,16 @@ class AsyncQueueEntry {
 
     constructor(item, callback) {
 
-		this.item = item;
-		/** @type {typeof QUEUED_STATE | typeof PROCESSING_STATE | typeof DONE_STATE} */
-		this.callback = callback;
-		/** @type {Callback<R>[] | undefined} */
-		this.callbacks = undefined;
-    // 记录当前任务的状态
-    this.state = QUEUED_STATE;
-		this.result = undefined;
-		/** @type {WebpackError | undefined} */
-		this.error = undefined;
+      this.item = item;
+      /** @type {typeof QUEUED_STATE | typeof PROCESSING_STATE | typeof DONE_STATE} */
+      this.callback = callback;
+      /** @type {Callback<R>[] | undefined} */
+      this.callbacks = undefined;
+      // 记录当前任务的状态
+      this.state = QUEUED_STATE;
+      this.result = undefined;
+      /** @type {WebpackError | undefined} */
+      this.error = undefined;
     }
 
 }
@@ -91,7 +91,7 @@ class AsyncQueue {
         setImmediate(this._ensureProcessing.bind(this));
     }
 
-    _ensureProcessing() {
+      _ensureProcessing() {
         while (this._activeTasks < this._parallelism) {
             const entry = this._queued.dequeue();
             if (!entry) break 

@@ -15,6 +15,7 @@ function processor(item, callback) {
 
   setTimeout(() => {
     // item.number = Math.random();
+    console.log('>>>>>>> Processing')
     item.deal = item.key + '==>被处理了'
     callback(null, item);
   
