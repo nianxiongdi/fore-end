@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-18T16:20:47.130Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="k1kEljaO8rHnyyT8oZST" version="21.6.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-18T16:53:41.630Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="guCt_ElY6unZD6a2y9N7" version="21.6.2" type="github" pages="2">
   <diagram name="Page-1" id="DigjpKDBXrDzWGz_JIb7">
     <mxGraphModel dx="1050" dy="550" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -92,6 +92,9 @@
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-17" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;b&gt;data&lt;/b&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=0;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="445.5" y="323.5" width="80" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-20" target="bhZDkHVfK8WzJ8-mESIo-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-20" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;initData&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="446.75" y="447" width="77.5" height="33.5" as="geometry" />
         </mxCell>
@@ -145,9 +148,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-39" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;initData&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="445.5" y="524" width="77.5" height="33.5" as="geometry" />
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-39" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;这里需要注意两点，&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;1. 跟Vue的data可以是函数也可以是对象，子组件的data必须是函数&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;align=left;" vertex="1" parent="1">
+          <mxGeometry x="432" y="538" width="198" height="100" as="geometry" />
         </mxCell>
+        <UserObject label="https://github.com/ustbhuangyi/vue-analysis/issues/25" link="https://github.com/ustbhuangyi/vue-analysis/issues/25" id="bhZDkHVfK8WzJ8-mESIo-40">
+          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="110.9999755859375" y="672.0000122070312" width="315" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
