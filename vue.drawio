@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-19T15:17:28.253Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="NvY6Gmi6df2ceOj9-xdo" version="21.6.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-19T15:31:13.145Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="xyw5Dv_hdiqb6-volXkH" version="21.6.2" type="github" pages="2">
   <diagram name="Page-1" id="DigjpKDBXrDzWGz_JIb7">
     <mxGraphModel dx="1050" dy="550" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -14,7 +14,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TsjlxxYHDJNQvXe3dho_" name="响应式">
-    <mxGraphModel dx="1050" dy="550" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1235" dy="647" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -273,6 +273,16 @@
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-82" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;数组&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="263" y="1415" width="77.5" height="33.5" as="geometry" />
         </mxCell>
+        <UserObject label="https://github.com/vuejs/vue/issues/8562" link="https://github.com/vuejs/vue/issues/8562" id="bhZDkHVfK8WzJ8-mESIo-83">
+          <mxCell style="text;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+            <mxGeometry x="653.0041750919117" y="1882.998177849265" width="244" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="记一次思否问答的问题思考：Vue为什么不能检测数组变动 https://segmentfault.com/a/1190000015783546?_ea=4074035" link="https://segmentfault.com/a/1190000015783546?_ea=4074035" id="bhZDkHVfK8WzJ8-mESIo-84">
+          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="571.0035868566176" y="1944.0046484375" width="358" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
