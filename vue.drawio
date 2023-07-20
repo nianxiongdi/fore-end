@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-19T15:31:13.145Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="xyw5Dv_hdiqb6-volXkH" version="21.6.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-20T01:20:45.758Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="EtXrIq5CYIylUW884_P-" version="21.6.2" type="github" pages="2">
   <diagram name="Page-1" id="DigjpKDBXrDzWGz_JIb7">
     <mxGraphModel dx="1050" dy="550" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-2" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;initMixin&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontColor=default;labelBackgroundColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="737" y="93" width="103" height="37" as="geometry" />
+          <mxGeometry x="1445" y="84" width="103" height="37" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-3" target="bhZDkHVfK8WzJ8-mESIo-4">
           <mxGeometry relative="1" as="geometry" />
@@ -32,13 +32,13 @@
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-3" target="bhZDkHVfK8WzJ8-mESIo-9">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="789" y="274" />
-              <mxPoint x="352" y="274" />
+              <mxPoint x="1497" y="265" />
+              <mxPoint x="1060" y="265" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-3" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;initState&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontColor=default;labelBackgroundColor=none;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="737" y="178" width="103" height="37" as="geometry" />
+          <mxGeometry x="1445" y="169" width="103" height="37" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-4" target="bhZDkHVfK8WzJ8-mESIo-6">
           <mxGeometry relative="1" as="geometry" />
@@ -49,13 +49,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-4" value="props" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="173" y="337" width="80" height="80" as="geometry" />
+          <mxGeometry x="881" y="328" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-6" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;initProps&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="173" y="460.5" width="82.75" height="33.5" as="geometry" />
+          <mxGeometry x="881" y="451.5" width="82.75" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-8" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;b&gt;initMethods&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=0;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="305.38" y="460.5" width="92.25" height="33.5" as="geometry" />
+          <mxGeometry x="1013.38" y="451.5" width="92.25" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-9" target="bhZDkHVfK8WzJ8-mESIo-8">
           <mxGeometry relative="1" as="geometry" />
@@ -66,10 +66,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-9" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;b&gt;methods&lt;/b&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=0;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="311.5" y="337" width="80" height="80" as="geometry" />
+          <mxGeometry x="1019.5" y="328" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-16" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="381.5" y="341.5" width="27" height="26" as="geometry" />
+          <mxGeometry x="1089.5" y="332.5" width="27" height="26" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-17" target="bhZDkHVfK8WzJ8-mESIo-20">
           <mxGeometry relative="1" as="geometry" />
@@ -81,7 +81,7 @@
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-17" target="bhZDkHVfK8WzJ8-mESIo-24">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="963.5" y="367" as="targetPoint" />
+            <mxPoint x="1671.5" y="358" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-26" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bhZDkHVfK8WzJ8-mESIo-25">
@@ -90,80 +90,80 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-17" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;b&gt;data&lt;/b&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=0;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="748.5" y="326.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="1456.5" y="317.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-20" target="bhZDkHVfK8WzJ8-mESIo-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-20" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;initData&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="749.75" y="450" width="77.5" height="33.5" as="geometry" />
+          <mxGeometry x="1457.75" y="441" width="77.5" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-24" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;observe(&lt;span style=&quot;&quot;&gt;vm&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;_data&lt;/span&gt; = {}, &lt;span style=&quot;&quot;&gt;true&lt;/span&gt;)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="868" y="347" width="253" height="39" as="geometry" />
+          <mxGeometry x="1576" y="338" width="253" height="39" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-27" value="&lt;b&gt;如果没有传，则赋值为空对象，设置为响应式&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="868" y="319" width="258" height="26" as="geometry" />
+          <mxGeometry x="1576" y="310" width="258" height="26" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-3" target="bhZDkHVfK8WzJ8-mESIo-17">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="738" y="229" as="sourcePoint" />
-            <mxPoint x="948" y="520" as="targetPoint" />
+            <mxPoint x="1446" y="220" as="sourcePoint" />
+            <mxPoint x="1656" y="511" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-31" target="bhZDkHVfK8WzJ8-mESIo-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-31" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;computed&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="1177" y="329" width="80" height="80" as="geometry" />
+          <mxGeometry x="1885" y="320" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-32" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;initComputed&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="1162.25" y="447" width="109.5" height="33.5" as="geometry" />
+          <mxGeometry x="1870.25" y="438" width="109.5" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-33" target="bhZDkHVfK8WzJ8-mESIo-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-33" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;watch&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="1316" y="331" width="80" height="80" as="geometry" />
+          <mxGeometry x="2024" y="322" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-34" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;initWatch&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="1317.25" y="447" width="77.5" height="33.5" as="geometry" />
+          <mxGeometry x="2025.25" y="438" width="77.5" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-3" target="bhZDkHVfK8WzJ8-mESIo-31">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="931" y="544" as="sourcePoint" />
-            <mxPoint x="981" y="494" as="targetPoint" />
+            <mxPoint x="1639" y="535" as="sourcePoint" />
+            <mxPoint x="1689" y="485" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="789" y="273" />
-              <mxPoint x="1217" y="275" />
+              <mxPoint x="1497" y="264" />
+              <mxPoint x="1925" y="266" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-3" target="bhZDkHVfK8WzJ8-mESIo-33">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1009" y="552" as="sourcePoint" />
-            <mxPoint x="1059" y="502" as="targetPoint" />
+            <mxPoint x="1717" y="543" as="sourcePoint" />
+            <mxPoint x="1767" y="493" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="789" y="273" />
-              <mxPoint x="1357" y="275" />
+              <mxPoint x="1497" y="264" />
+              <mxPoint x="2065" y="266" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-39" target="bhZDkHVfK8WzJ8-mESIo-47">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="788.5999999999999" y="696" as="targetPoint" />
+            <mxPoint x="1496.6" y="687" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-39" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;这里需要注意两点，&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;1. 跟Vue的data可以是函数也可以是对象，子组件的data必须是函数，因为是箭头函数的时：data: vm =&amp;gt; ({ a: vm.myProp }) 其次避免同一个引用造成的影响。https://blog.csdn.net/shaleilei/article/details/78084171&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;align=left;verticalAlign=top;horizontal=1;" vertex="1" parent="1">
-          <mxGeometry x="566.5" y="542" width="444" height="119" as="geometry" />
+          <mxGeometry x="1274.5" y="533" width="444" height="119" as="geometry" />
         </mxCell>
         <UserObject label="https://github.com/ustbhuangyi/vue-analysis/issues/25" id="bhZDkHVfK8WzJ8-mESIo-40">
           <mxCell style="text;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
-            <mxGeometry x="1157.9999755859376" y="682.0000122070312" width="315" height="36" as="geometry" />
+            <mxGeometry x="1865.9999755859376" y="673.0000122070312" width="315" height="36" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="相同属性的优先级&#xa;props ==&gt; methods ==&gt; data ==&gt; computed ==&gt; watch&#xa;" link="https://blog.csdn.net/qq_45937484/article/details/124616832" id="bhZDkHVfK8WzJ8-mESIo-44">
           <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
-            <mxGeometry x="859" y="219" width="377.4" height="36" as="geometry" />
+            <mxGeometry x="1567" y="210" width="377.4" height="36" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-47" target="bhZDkHVfK8WzJ8-mESIo-50">
@@ -171,7 +171,7 @@
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-47">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="788.5999999999999" y="842" as="targetPoint" />
+            <mxPoint x="1496.6" y="833" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-59" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bhZDkHVfK8WzJ8-mESIo-58">
@@ -180,18 +180,18 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-47" value="&lt;b style=&quot;&quot;&gt;查看value是否有__ob__属性&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="734.5" y="692" width="108" height="108" as="geometry" />
+          <mxGeometry x="1442.5" y="683" width="108" height="108" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-50" value="&lt;b style=&quot;&quot;&gt;查看value是否有__ob__属性，表明为响应式对象&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeColor=none;align=left;" vertex="1" parent="1">
-          <mxGeometry x="875" y="694.5" width="129.5" height="103" as="geometry" />
+          <mxGeometry x="1583" y="685.5" width="129.5" height="103" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-54" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;赋值到ob&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="625" y="729.25" width="77.5" height="33.5" as="geometry" />
+          <mxGeometry x="1333" y="720.25" width="77.5" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-55" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-47" target="bhZDkHVfK8WzJ8-mESIo-54">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="482" y="901" as="sourcePoint" />
-            <mxPoint x="532" y="851" as="targetPoint" />
+            <mxPoint x="1190" y="892" as="sourcePoint" />
+            <mxPoint x="1240" y="842" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-57" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bhZDkHVfK8WzJ8-mESIo-55">
@@ -203,7 +203,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-60" value="&lt;span style=&quot;&quot;&gt;1. 是否要执行shouldObserve&lt;br&gt;2. 不是为服务端渲染&lt;br&gt;3. 是否为对象或数组&lt;br&gt;4. ！value&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;_isVue&lt;br&gt;&lt;br&gt;是否满足以上条件&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=none;fontColor=default;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="701" y="839" width="183.5" height="173" as="geometry" />
+          <mxGeometry x="1409" y="830" width="183.5" height="173" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-61" target="bhZDkHVfK8WzJ8-mESIo-63">
           <mxGeometry relative="1" as="geometry" />
@@ -212,17 +212,81 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-61" value="new&amp;nbsp;Observer(value)" style="rounded=1;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=none;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="732.75" y="1056.5" width="120" height="37" as="geometry" />
+          <mxGeometry x="1440.75" y="1047.5" width="120" height="37" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-63" value="创建响应式对象" style="rounded=1;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=none;fontStyle=1;fontColor=default;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="890.5" y="1045" width="120" height="60" as="geometry" />
+          <mxGeometry x="1598.5" y="1036" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-65" value="valueb绑定__ob__属性，职位当前Observe的实例" style="rounded=1;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1436.13" y="1129" width="129.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-70" target="bhZDkHVfK8WzJ8-mESIo-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1664" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-70" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;对象&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1624" y="1255" width="77.5" height="33.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-74" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-65" target="bhZDkHVfK8WzJ8-mESIo-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1213" y="1502" as="sourcePoint" />
+            <mxPoint x="1263" y="1452" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1503" y="1211" />
+              <mxPoint x="1664" y="1211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-75" target="bhZDkHVfK8WzJ8-mESIo-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-75" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;通过Object&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;&quot;&gt;defineProperty对每一个key数据劫持&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;strokeColor=default;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1565.38" y="1411" width="197" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-78" target="bhZDkHVfK8WzJ8-mESIo-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-78" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;const &lt;span style=&quot;&quot;&gt;dep&lt;/span&gt; = &lt;span style=&quot;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;&quot;&gt;Dep&lt;/span&gt;()&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1572.13" y="1328" width="183.5" height="33.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-80" target="bhZDkHVfK8WzJ8-mESIo-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-80" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;get: function reactiveGetter () {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;value&lt;/span&gt; = &lt;span style=&quot;&quot;&gt;getter&lt;/span&gt; ? &lt;span style=&quot;&quot;&gt;getter&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;call&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;obj&lt;/span&gt;) : &lt;span style=&quot;&quot;&gt;val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;debugger&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;// 依赖收集&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;Dep&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;target&lt;/span&gt;) {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;dep&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;depend&lt;/span&gt;()&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;childOb&lt;/span&gt;) {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;childOb&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;dep&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;depend&lt;/span&gt;() &lt;span style=&quot;&quot;&gt;// ?&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;Array&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;isArray&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;value&lt;/span&gt;)) {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;dependArray&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;value&lt;/span&gt;)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;return&lt;/span&gt; &lt;span style=&quot;&quot;&gt;value&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1432.94" y="1495" width="461.88" height="354" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-82" target="bhZDkHVfK8WzJ8-mESIo-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="https://github.com/vuejs/vue/issues/8562" link="https://github.com/vuejs/vue/issues/8562" id="bhZDkHVfK8WzJ8-mESIo-83">
+          <mxCell style="text;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+            <mxGeometry x="1361.0041750919117" y="1873.998177849265" width="244" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="记一次思否问答的问题思考：Vue为什么不能检测数组变动 https://segmentfault.com/a/1190000015783546?_ea=4074035&#xa;&#xa;&#xa;有以下两个原因:&#xa;&#xa;1.  对性能消耗大 &#xa;2.  this.text[2] = &#39;abc&#39; 无法监听&#xa;" id="bhZDkHVfK8WzJ8-mESIo-84">
+          <mxCell style="text;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+            <mxGeometry x="1080" y="1358" width="423" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-87" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;/*&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp;* not type checking this file because flow doesn&#39;t play well with&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp;* dynamically accessing methods on Array prototype&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp;*/&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;import&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; { &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; } &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;from&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;../util/index&#39;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;arrayProto&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;Array&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;prototype&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;export&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;arrayMethods&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;Object&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;create&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;arrayProto&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;methodsToPatch&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = [&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;push&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;pop&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;shift&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;unshift&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;splice&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;sort&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;reverse&#39;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;]&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp;* Intercept mutating methods and emit events&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp;*/&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;methodsToPatch&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;forEach&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; (&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;// cache original method&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;original&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;arrayProto&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;arrayMethods&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;mutator&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; (...&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;result&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;original&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;apply&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;ob&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;this&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;__ob__&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;let&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;inserted&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;switch&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; (&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;case&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;push&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;case&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;unshift&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;inserted&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;break&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;case&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;splice&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;inserted&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;slice&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b5cea8;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;break&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; (&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;inserted&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;ob&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;observeArray&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;inserted&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;// notify change&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;ob&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;dep&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;notify&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;result&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;nbsp; })&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;})&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305.0005882352941" y="1140.001162109375" width="550" height="896" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-85" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;对数组的方法进行重写，进行相应&lt;/div&gt;&lt;div&gt;&#39;push&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#39;pop&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#39;shift&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#39;unshift&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#39;splice&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#39;sort&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#39;reverse&#39;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;align=left;" vertex="1" parent="1">
+          <mxGeometry x="886.75" y="1497" width="246" height="215.75" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-69" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;数组&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="971" y="1310" width="77.5" height="33.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-82" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;数组&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="971" y="1406" width="77.5" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="bhZDkHVfK8WzJ8-mESIo-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-65" target="bhZDkHVfK8WzJ8-mESIo-69">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="793.5" y="1231" as="targetPoint" />
+            <mxPoint x="1501.5" y="1222" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="793" y="1218" />
-              <mxPoint x="309" y="1218" />
+              <mxPoint x="1501" y="1209" />
+              <mxPoint x="1017" y="1209" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -231,58 +295,15 @@
             <mxPoint x="17" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-65" value="valueb绑定__ob__属性，职位当前Observe的实例" style="rounded=1;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=none;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="728.13" y="1138" width="129.25" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-69" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;数组&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="263" y="1319" width="77.5" height="33.5" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-70" target="bhZDkHVfK8WzJ8-mESIo-78">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="956" y="1349" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-70" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;对象&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="916" y="1264" width="77.5" height="33.5" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-74" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-65" target="bhZDkHVfK8WzJ8-mESIo-70">
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-88" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.006;exitY=0.425;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-85" target="bhZDkHVfK8WzJ8-mESIo-87">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="505" y="1511" as="sourcePoint" />
-            <mxPoint x="555" y="1461" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="795" y="1220" />
-              <mxPoint x="956" y="1220" />
-            </Array>
+            <mxPoint x="902" y="1797" as="sourcePoint" />
+            <mxPoint x="952" y="1747" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-75" target="bhZDkHVfK8WzJ8-mESIo-80">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="bhZDkHVfK8WzJ8-mESIo-90" value="最终每一个key 都会变成数据相应的，且会递归的去触发绑定。" style="whiteSpace=wrap;html=1;align=left;rounded=1;labelBackgroundColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1602.75" y="1901" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-75" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;通过Object&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;&quot;&gt;defineProperty对每一个key数据劫持&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;strokeColor=default;align=left;" vertex="1" parent="1">
-          <mxGeometry x="857.38" y="1420" width="197" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bhZDkHVfK8WzJ8-mESIo-78" target="bhZDkHVfK8WzJ8-mESIo-75">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-78" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;const &lt;span style=&quot;&quot;&gt;dep&lt;/span&gt; = &lt;span style=&quot;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;&quot;&gt;Dep&lt;/span&gt;()&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="864.13" y="1337" width="183.5" height="33.5" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-80" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;get: function reactiveGetter () {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;value&lt;/span&gt; = &lt;span style=&quot;&quot;&gt;getter&lt;/span&gt; ? &lt;span style=&quot;&quot;&gt;getter&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;call&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;obj&lt;/span&gt;) : &lt;span style=&quot;&quot;&gt;val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;debugger&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;// 依赖收集&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;Dep&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;target&lt;/span&gt;) {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;dep&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;depend&lt;/span&gt;()&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;childOb&lt;/span&gt;) {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;childOb&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;dep&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;depend&lt;/span&gt;() &lt;span style=&quot;&quot;&gt;// ?&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;Array&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;isArray&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;value&lt;/span&gt;)) {&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;dependArray&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;value&lt;/span&gt;)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;&quot;&gt;return&lt;/span&gt; &lt;span style=&quot;&quot;&gt;value&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="724.9399999999999" y="1504" width="461.88" height="354" as="geometry" />
-        </mxCell>
-        <mxCell id="bhZDkHVfK8WzJ8-mESIo-82" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;数组&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontStyle=1;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="263" y="1415" width="77.5" height="33.5" as="geometry" />
-        </mxCell>
-        <UserObject label="https://github.com/vuejs/vue/issues/8562" link="https://github.com/vuejs/vue/issues/8562" id="bhZDkHVfK8WzJ8-mESIo-83">
-          <mxCell style="text;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
-            <mxGeometry x="653.0041750919117" y="1882.998177849265" width="244" height="36" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="记一次思否问答的问题思考：Vue为什么不能检测数组变动 https://segmentfault.com/a/1190000015783546?_ea=4074035" link="https://segmentfault.com/a/1190000015783546?_ea=4074035" id="bhZDkHVfK8WzJ8-mESIo-84">
-          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
-            <mxGeometry x="571.0035868566176" y="1944.0046484375" width="358" height="36" as="geometry" />
-          </mxCell>
-        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
