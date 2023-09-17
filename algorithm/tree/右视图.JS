@@ -1,3 +1,4 @@
+
 function rightSideView(root) {
     const res = [];
   
@@ -11,9 +12,8 @@ function rightSideView(root) {
     dfs(root, 0);
     return res;
 }
-  
-
-  
+ 
+ 
 function rightSideView1(root) {
     if (!root) return [];
   
@@ -31,7 +31,7 @@ function rightSideView1(root) {
     }
   
     return res;
-  }
+}
   
   
 
