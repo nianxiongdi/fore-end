@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // function  p1 () {
+
+        // }
+        // function abc() {
+        //     Promise.resolve().then((e) => {
+        //         console.log("微任务1");
+        //         p1()
+        //     });
+        // }
+        // setTimeout(() => {
+        //     console.log("宏任务");
+        //     abc()
+        // }, 0);
+        // Promise.resolve().then((e) => {
+        //     console.log("微任务");
+        // });
+        function calc() {
+            let a = 0;
+            for (let i=0; i<1000000;i++) {
+                a += i
+            }
+        }
+
+        function calc1() {
+            let a = 0;
+            for (let i=0; i<1000000;i++) {
+                a += i
+            }
+        }
+
+        function calc2() {
+            let a = 0;
+            for (let i=0; i<1000000;i++) {
+                a += i
+            }
+        }
+
+        function calc3() {
+            let a = 0;
+            for (let i=0; i<1000000;i++) {
+                a += i
+            }
+        }
+
+        function calc4() {
+            let a = 0;
+            for (let i=0; i<1000000;i++) {
+                a += i
+            }
+        }
+
+
+        function calc5() {
+            let a = 0;
+            for (let i=0; i<1000000;i++) {
+                a += i
+            }
+        }
+        Promise.resolve().then(() => {
+            console.log(0);
+            calc()
+        return Promise.resolve(4);
+        }).then((res) => {
+            calc4()
+            console.log(res)
+        })
+
+        Promise.resolve().then(() => {
+        console.log(1);
+        calc1()
+        }).then(() => {
+        console.log(2);
+        calc2()
+        }).then(() => {
+        console.log(3);
+        calc3()
+        }).then(() => {
+        console.log(5);
+        }).then(() => {
+        console.log(6);
+        })
+
+
+        // Promise.resolve().then(() => {
+        //     console.log('p1')
+        //     calc()
+        //     const timer2 = setTimeout(() => {
+        //         console.log('t2')
+        //         calc()
+        //     }, 0)
+        // })
+
+        // calc()
+
+        // const t1 = setTimeout(() => {
+        //     console.log('t1')
+        //     calc()
+        //     Promise.resolve().then(() => {
+        //         console.log('p2')
+        //         calc()
+        //     })
+        // }, )
+    </script>
+</body>
+</html>

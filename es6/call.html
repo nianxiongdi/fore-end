@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function runStack(n, result = 100) {
+        if (n === 0) {
+            return result;
+        }
+        return runStack(n - 2, result - 2);
+        }
+
+        const result = runStack(50000);
+        console.log(result);
+
+    </script>
+</body>
+</html>
