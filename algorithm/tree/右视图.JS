@@ -13,6 +13,26 @@ function rightSideView(root) {
 }
   
 
+let de = {
+  b: {
+    b: 'name2',
+    c: {
+      c: 'name3'
+    }
+  }
+}
+
+de.c = de
+
+
+let obj = { 
+  a:1 , 
+  b: [1,2,3],
+  c: {  name: 12 },
+  ob: de
+}
+
+
   
 function rightSideView1(root) {
     if (!root) return [];
@@ -29,7 +49,7 @@ function rightSideView1(root) {
       }
       queue = temp;
     }
-  
+    
     return res;
   }
   
