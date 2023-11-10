@@ -1,18 +1,1 @@
-{
-    "version": 3,
-    "file": "bundle.js",
-    "mappings": "AASAA,QAAQC,IAPGC,GAQXC,EACAH,QAAQC,IALGC",
-    "sources": [
-        "webpack://loader/./src/index.js"
-    ],
-    "sourcesContent": [
-        "// index.js\r\nfunction add(a, b) {\r\n    return a + b;\r\n}\r\n\r\nfunction subtract(a, b) {\r\n    return a - b;\r\n}\r\n\r\nconsole.log(add(5, 3));\r\nc\r\nconsole.log(subtract(10, 4));\r\n"
-    ],
-    "names": [
-        "console",
-        "log",
-        "a",
-        "c"
-    ],
-    "sourceRoot": ""
-}
+{"version":3,"file":"bundle.js","mappings":"AASAA,QAAQC,IAPGC,GAQXC,EACAH,QAAQC,IALGC","sources":["webpack://loader/./src/index.js"],"sourcesContent":["// index.js\r\nfunction add(a, b) {\r\n    return a + b;\r\n}\r\n\r\nfunction subtract(a, b) {\r\n    return a - b;\r\n}\r\n\r\nconsole.log(add(5, 3));\r\nc\r\nconsole.log(subtract(10, 4));\r\n"],"names":["console","log","a","c"],"sourceRoot":""}

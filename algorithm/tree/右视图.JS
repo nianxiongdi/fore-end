@@ -1,3 +1,4 @@
+
 function rightSideView(root) {
     const res = [];
   
@@ -11,29 +12,8 @@ function rightSideView(root) {
     dfs(root, 0);
     return res;
 }
-  
-
-let de = {
-  b: {
-    b: 'name2',
-    c: {
-      c: 'name3'
-    }
-  }
-}
-
-de.c = de
-
-
-let obj = { 
-  a:1 , 
-  b: [1,2,3],
-  c: {  name: 12 },
-  ob: de
-}
-
-
-  
+ 
+ 
 function rightSideView1(root) {
     if (!root) return [];
   
@@ -51,7 +31,7 @@ function rightSideView1(root) {
     }
     
     return res;
-  }
+}
   
   
 
