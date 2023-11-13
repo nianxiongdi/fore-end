@@ -29,7 +29,7 @@ function rightSideView1(root) {
       }
       queue = temp;
     }
-  
+    
     return res;
 }
   
