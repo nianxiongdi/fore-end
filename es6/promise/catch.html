@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const p0 = Promise.resolve('123')
+        // const p1 = p0.then(() => {throw new Error('456')})
+        // const p2 = p1.then(_ => {
+        //     console.log('shouldnot be here')
+        // }, ()=> {
+        //     console.log('111')
+        // })
+        // const p3 = p2.catch((e) => console.log('>>> e', e))
+        // const p4 = p3.then((data) => console.log(data));
+
+
+        // 下面代码中，Promise 在resolve语句后面，再抛出错误，
+        // 不会被捕获，等于没有抛出。因为 Promise 的状态一旦改变，就永久保持该状态，不会再变了。
+        const promise = new Promise(function(resolve, reject) {
+            a/1
+        });
+        promise.catch(function(error) {
+            console.log('>>> err', error );
+        });
+
+
+ 
+     </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+ 
+
+
+ 
+ 
+ function createCircularPromise() {
+  let circularPromise;
+
+  circularPromise = new Promise((resolve, reject) => {
+    resolve(circularPromise);
+  });
+
+  return circularPromise;
+}
+
+const circularPromise = createCircularPromise();
+
+// 正常处理 Promise 链
+circularPromise.then(value => {
+  console.log("Resolved with value:", value);
+}).catch(error => {
+  console.error("Caught an error:", error);
+});
+
+    </script>
+</body>
+</html>

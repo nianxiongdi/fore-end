@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class MyPromise {
+            constructor(execute) {
+                this.PENDING = 'pending';
+                this.FULFILLED = 'fulfilled';
+                this.REJECTED = 'rejected';
+
+                this.status = this.PENDING
+                this.value = ''
+
+                // 1. 必须用new调用  Promise
+                // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new.target
+                if (!new.target) throw "promise must be called with new"
+
+                // 2. 必须传入函数， Promise(1) // err
+                if (!execute) {
+                    throw "must execute method."
+                }
+                this.onFulfilledCallbacks = []  
+                this.onRejectedCallbacks = []
+
+                const resolve = (res) => {
+                    if (this.PENDING === this.status) {
+                        this.status = this.FULFILLED
+                        this.value = res
+                        this.onFulfilledCallbacks.forEach(callback => {
+                            callback(this.value)
+                        })
+                    }
+                }
+                const reject = (err) => {
+                    if (this.PENDING === this.status) {
+                        // this.onRejectedCallbacks(err)
+                        this.onRejectedCallbacks.forEach(callback => {
+                            callback(this.value)
+                        })
+                    }
+                }
+
+                try {
+                    execute(resolve, reject)
+                } catch (error) {
+                    // 1. resolve(1); 后面跟throw XXX语句不会改变状态，是因为有前置的判断。
+                    // 2. 没有resolve的情况下，报错
+                    reject() 
+                }
+
+            }
+
+            then (onFulfilled, onRejected) {
+                let realOnFulfilled = onFulfilled
+                let promise2 = () => {}
+
+                // 这个试试
+                if (typeof onFulfilled !== 'function') {
+                    realFulfilled = (value) => {
+                        return onFulfilled
+                    }
+                }
+
+                var realOnRejected = onRejected
+                if (typeof onRejected !== 'function') {
+                    realOnRejected = function (reason) {
+                        throw reason;
+                    }
+                }
+
+                // fulfilled
+                if (this.status === this.FULFILLED) {
+                    promise2 = new MyPromise((resolve, reject) => {
+                        setTimeout(() => {
+                            try {
+                                if  (typeof onFulfilled !== 'function') {
+                                    resolve(this.value)
+                                } else {
+                                    let x = realOnFulfilled(this.value)
+                                    this.#resolvePromise(promise2, x, resolve, reject)
+                                }
+                            // 报错的时候  也会变为reject
+                            } catch (err) {
+                                reject(err)
+                            }
+                        }, 0)
+                    })
+                }
+
+                // rejected
+                if (this.status === this.REJECTED) {
+                    promise2 = new MyPromise((resolve, reject) => {
+                        setTimeout(() => {
+                            try {
+                                if (typeof realOnRejected !== 'function') {
+                                    resolve(this.value)
+                                } else {
+                                    let x = realOnRejected(this.value)
+                                    this.#resolvePromise(promise2, x, resolve, reject)
+                                }
+                            } catch (err) {
+                                reject(err)
+                            }
+                        }, 0)
+                    })
+                }
+
+                if (this.status === this.PENDING) {
+                    promise2 = new MyPromise((resolve, reject) => {
+                        this.onFulfilledCallbacks.push(() => {
+                            setTimeout(() => {
+                                try {
+                                    if  (typeof onFulfilled !== 'function') {
+                                        resolve(this.value)
+                                    } else {
+                                        let x = realOnFulfilled(this.value)
+                                        this.#resolvePromise(promise2, x, resolve, reject)
+                                    }
+                                // 报错的时候  也会变为reject
+                                } catch (err) {
+                                    reject(err)
+                                }
+                            }, 0)
+                        })
+                        this.onRejectedCallbacks.push(() => {
+                            setTimeout(() => {
+                                try {
+                                    if (typeof realOnRejected !== 'function') {
+                                        resolve(this.value)
+                                    } else {
+                                        let x = realOnRejected(this.value)
+                                        this.#resolvePromise(promise2, x, resolve, reject)
+                                    }
+                                } catch (err) {
+                                    reject(err)
+                                }
+                            }, 0)
+                        })
+                    })
+                }
+
+                return promise2
+            }
+
+            #resolvePromise (promise, x, resolve, reject) {
+                /*
+                    let promise2 = p.then(data => {
+                        return promise2;
+                    });
+                    // TypeError: Chaining cycle detected for promise #<Promise>
+                */
+                if (promise === x) {
+                    return reject(new TypeError('Chaining cycle detected for promise #<Promise>'))
+                }
+                console.log()
+                let that = this
+                debugger
+                let called
+                if (['object', 'function'].includes(typeof x)) {
+                    if (x === null) {
+                        return resolve(x)
+                    }
+                    let then = ''
+                    try {
+                        then = x.then
+                    } catch (error) {
+                        return reject(error)                        
+                    }
+
+                    if (typeof then === 'function') {
+                        try {
+                            then.call(x,
+                                function(y) {
+                                    /*
+                                        let promise2 = p.then( (res) => {
+                                            console.log(3)
+                                            return {then(resolve, reject){
+                                                resolve(333)
+                                                reject(111)
+                                            }}  
+                                        })
+                                        promise2.then(console.log)
+                                    */
+                                    if (called) return
+                                    called = true
+                                    that.#resolvePromise(promise, y, resolve, reject)
+                                }, function(r) {
+                                    if (called) return
+                                    called = true
+                                    reject(r);
+                                })
+                        } catch (err) {
+                            if (called) return
+                            called = true
+                            reject(err)
+                        }
+                    } else {
+                        // 如果 then 不是函数，以 x 为参数执行 promise
+                        resolve(x)
+                    }
+                } else { // 如果 x 不为对象或者函数，以 x 为参数执行 promise
+                    resolve(x)
+                }
+            }
+
+            deferred () {
+                var result = {};
+                result.promise = new MyPromise(function (resolve, reject) {
+                    result.resolve = resolve;
+                    result.reject = reject;
+                });
+
+                return result;
+            }
+
+        }
+
+        const p = new MyPromise((resolve, reject) => {
+            resolve(11)
+        })
+
+        let promise2 = p.then( (res) => {
+            console.log(3)
+            return {then(resolve, reject){
+                resolve(333)
+                reject(111)
+            }}  
+        })
+        promise2.then(console.log)
+
+
+    </script>
+</body>
+</html>
