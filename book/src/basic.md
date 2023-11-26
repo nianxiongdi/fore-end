@@ -241,6 +241,56 @@ fn main() {
 }
 ```
 
+`打印结构体:`
+
+```rust
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn main() {
+    let scale = 2;
+    let rect1 = Rectangle {
+        width: dbg!(30 * scale), // 会输出[src/main.rs:16] 30 * scale = 60
+        height: 50,
+    };
+
+    println!("rect1 is {:?}", rect1);
+}
+
+```
+
+`定义方法`
+```rust
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
+fn main() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        rect1.area()
+    );
+}
+
+```
+
 # 枚举
 
 - Rust 中的枚举（enumerations）是一种自定义数据类型，用于表示一个值可以是有限集合中的一种情况。枚举在 Rust 中非常强大，可以用于模式匹配、错误处理、状态管理等多种情境。下面是 Rust 中枚举的全面介绍： 
@@ -271,6 +321,11 @@ let ipv6 = IpAddrKind::V6;
 使用 `match` 表达式可以匹配枚举值，执行不同的代码分支，根据枚举值的变体来执行相应的操作。例如：
 
 ```rust
+enum IpAddr {
+    V4(String),
+    V6(u32, u32, u32, u32),
+}
+
 match ipv4 {
     IpAddrKind::V4 => println!("This is an IPv4 address."),
     IpAddrKind::V6 => println!("This is an IPv6 address."),
@@ -295,12 +350,27 @@ enum IpAddr {
 使用 `match` 表达式来模式匹配携带数据的枚举值：
 
 ```rust
-let home = IpAddr::V4(String::from("127.0.0.1"));
-
-match home {
-    IpAddr::V4(ip) => println!("IPv4 address: {}", ip),
-    IpAddr::V6(a, b, c, d) => println!("IPv6 address: {}.{}.{}.{}", a, b, c, d),
+enum IpAddr {
+    V4(String),
+    V6(u32, u32, u32, u32),
 }
+
+fn main() {
+    let v4 = IpAddr::V4(String::from("127.0.0.1"));
+    let v6 = IpAddr::V6(1, 2, 3, 4);
+
+    ipfun(v4);
+    ipfun(v6);
+}
+
+fn ipfun(home: IpAddr) {
+    match home {
+        IpAddr::V4(ip) => println!("IPv4 address: {}", ip),
+        IpAddr::V6(a, b, c, d) => println!("IPv6 address: {}.{}.{}.{}", a, b, c, d),
+    }
+}
+
+
 ``` 
 6. **Option 枚举** ：
 
@@ -316,6 +386,7 @@ enum Option<T> {
 
 
 例如，`Option` 可以用于安全地处理可能返回空值的操作，如文件读取或数据解析。 
+
 7. **Result 枚举** ：
 
 `Result` 枚举也是 Rust 标准库中的常见枚举，用于表示操作的结果，可能是成功的 `Ok` 或失败的 `Err`。通常用于处理错误和异常情况。
@@ -380,9 +451,20 @@ fn main() {
 
 ```
 
+#  package, crate, module
+
+package(包) - 
+crate(单元包) - 
+![Alt text](image.png)
+
+
 # rust中文手册
 https://rustwiki.org/zh-CN/reference/attributes.html
 
 https://github.com/i5ting/learn-rust-for-fe 学习工具
 
 https://github1s.com/TonyCrane/note/tree/af3095d2af2e772ef30f510a9ef621154814b6d5
+
+https://www.cnblogs.com/praying/p/14457360.html
+
+https://foresightnews.pro/article/detail/11721
