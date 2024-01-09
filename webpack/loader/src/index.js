@@ -10,3 +10,6 @@ function subtract(a, b) {
 console.log(add(5, 3));
 c
 console.log(subtract(10, 4));
+
+
+const [a, b, c] = '123'
