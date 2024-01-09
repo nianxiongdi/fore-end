@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function async1() {
+            console.log("async1 start");
+            let a2 = async2();
+            await a2
+            console.log("async1 end");
+        }
+        async function async2() {
+            console.log("async2");
+            let p1 = Promise.resolve()
+            let p2 = p1.then(() => {
+                console.log("async2-inner");
+            })
+            return p2;
+        }
+
+        let a1 = async1();
+
+        let p3 = new Promise(function (resolve) {
+            console.log("promise1");
+            resolve();
+        })
+
+        let p4 = p3.then(function () {
+            console.log("promise2");
+        })
+        // 为 p3 添加 reactions
+        let p5 = p4.then(function () {
+            console.log("promise3");
+        })
+        // 为 p4 添加 reactions
+        let p6 = p5.then(function () {
+            console.log("promise4");
+        });
+        // 为 p5 添加 reactions
+        console.log("script end");
+
+     </script>
+</body>
+</html>

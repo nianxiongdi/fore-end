@@ -1,49 +1,38 @@
-// fn main() {
 
-//     let mut a = 5;
-//     a = 1;
-//     println!(">>> a = {}", a);
-// }
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
 
-use clap::Parser;
-// use crate::commands;
-// use crate::commands::Command;
-mod commands;
 
-#[derive(clap::Parser, Debug)]
-pub enum SubCommand {
-    /// List all remote Node.js versions
-    #[clap(name = "list-remote", bin_name = "list-remote", visible_aliases = &["ls-remote"])]
-    LsRemote(commands::ls_remote::LsRemote),
+fn main() {
+
+
+    // 结构体的定义
+    let mut user1 = User {
+        email: String::from("someone@example.com"),
+        username: String::from("someusername123"),
+        active: true,
+        sign_in_count: 1,
+    };
+
+    user1.email = String::from("anotheremail@example.com");
+
+    // println!("{}", user1)
 
 }
 
-impl SubCommand {
-    pub fn call(self) {
-        match self {
-            Self::LsRemote(cmd) => {
-
-                // print!(">>>> ", cmd);
-                return cmd.call()
-            },
-         }
+// 参数名与字段名都完全相同，我们可以使用字段初始化简写语法
+fn build_user(email: String, username: String) -> User {
+    User {
+        email, // this
+        username, // this
+        active: true,
+        sign_in_count: 1,
     }
 }
 
-#[derive(clap::Parser, Debug)]
-#[clap(name = "fnm", version = env!("CARGO_PKG_VERSION"), bin_name = "fnm")]
-pub struct Cli {
-    // #[clap(flatten)]
-    // pub config: FnmConfig,
-    #[clap(subcommand)]
-    pub subcmd: SubCommand,
-}
 
-pub fn parse() -> Cli {
-    Cli::parse()
-}
 
-fn main() {
-    let value = parse();
-    // value.subcmd.call(value.config);
-}

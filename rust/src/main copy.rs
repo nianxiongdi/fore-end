@@ -1,49 +1,46 @@
-// fn main() {
-
-//     let mut a = 5;
-//     a = 1;
-//     println!(">>> a = {}", a);
-// }
-
-use clap::Parser;
-// use crate::commands;
-// use crate::commands::Command;
-mod commands;
-
-#[derive(clap::Parser, Debug)]
-pub enum SubCommand {
-    /// List all remote Node.js versions
-    #[clap(name = "list-remote", bin_name = "list-remote", visible_aliases = &["ls-remote"])]
-    LsRemote(commands::ls_remote::LsRemote),
-
-}
-
-impl SubCommand {
-    pub fn call(self) {
-        match self {
-            Self::LsRemote(cmd) => {
-
-                // print!(">>>> ", cmd);
-                return cmd.call()
-            },
-         }
-    }
-}
-
-#[derive(clap::Parser, Debug)]
-#[clap(name = "fnm", version = env!("CARGO_PKG_VERSION"), bin_name = "fnm")]
-pub struct Cli {
-    // #[clap(flatten)]
-    // pub config: FnmConfig,
-    #[clap(subcommand)]
-    pub subcmd: SubCommand,
-}
-
-pub fn parse() -> Cli {
-    Cli::parse()
-}
-
 fn main() {
-    let value = parse();
-    // value.subcmd.call(value.config);
+
+    // // let  a= 5;
+    // let guess: i32  = "42a".parse().expect("Not a number!");
+    // // println!(">>> a = {}", a);
+
+    // println!(">>> {}", guess)
+
+    let a = 5;
+    let b:i32 = 5;
+
+    // 十六进制	
+    let c  = 0xff;
+
+    // 浮点型
+    let d = 2.0;
+    let e:f32 = 2.0;
+    let f:f64 = 2.0;
+
+    let g = 5 + 10;
+
+    // boolean
+    let h = true;
+    let i: bool = false; // with explicit type annotation
+
+    let j = 'z';
+
+    // 元组类型
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    println!(">>> {}", tup.0); // 500
+    println!(">>> {}", tup.1);// 6.4
+    println!(">>> {}", tup.2); // 1
+    let tup = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("The value of y is: {}", y);
+
+
+    // 数组类型
+    // 格式 [类型, 长度]
+    let a = [1, 2, 3, 4, 5];
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    a[0]; // 访问
 }
+
+

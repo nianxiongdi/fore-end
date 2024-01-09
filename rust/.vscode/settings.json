@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./restaurant/Cargo.toml",
+        "./Cargo.toml"
+    ]
+}

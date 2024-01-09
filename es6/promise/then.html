@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        promise = new Promise((resolve, reject) => {
+            resolve(1)
+        })
+        // 没有处理函数的 case，透传上一个 Promise 的 argument
+        promise.then(null, function(error) {
+            console.log(1)
+        }).then((e)=> {
+            console.log('>>> e', e)
+        });
+
+    </script>
+</body>
+</html>
