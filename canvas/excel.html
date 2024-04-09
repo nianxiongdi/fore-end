@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+    <script>
+ 
+    // function exportExcelFile(array, sheetName = '表1', fileName = 'example.xlsx') {
+    //     const jsonWorkSheet = XLSX.utils.json_to_sheet(array);
+    //     const workBook = {
+    //         SheetNames: [sheetName],
+    //         Sheets: {
+    //         [sheetName]: jsonWorkSheet,
+    //         }
+    //     };
+    //     return XLSX.writeFile(workBook, fileName);
+    // }
+    // const ddArray = [
+    //     ['S', 'h', 'e', 'e', 't', 'J', 'S'],
+    //     [1, 2, 3, 4, 5],
+    // ];
+
+    function exportExcelFile(array, sheetName = '表1', fileName = 'example.xlsx') {
+            // 添加标题行
+            const header = ["Header1", "Header2", "Header3", "Header4", "Header5", "Header6", "Header7"];
+            array.unshift(header);
+
+            // 将数组转换为工作表对象
+            const jsonWorkSheet = XLSX.utils.json_to_sheet(array);
+            
+            // 创建工作簿对象
+            const workBook = {
+                SheetNames: [sheetName],
+                Sheets: {
+                    [sheetName]: jsonWorkSheet,
+                }
+            };
+
+            // 将工作簿对象写入文件并下载
+            return XLSX.writeFile(workBook, fileName);
+        }
+    exportExcelFile(ddArray)
+
+
+    </script>
+</body>
+</html>

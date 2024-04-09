@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            /*  绝对定位，宽度不会继承 */
+            position: absolute;
+        }       
+
+        .box2 {
+            /* 相对定位  宽度会继承 */
+            position: relative;
+        }
+
+        .box3 {
+            /* static  宽度会继承 */
+            position:static;
+        }
+
+        .box4 {
+            /*  黏粘定位 宽度会继承 */
+            position: sticky;
+        }
+
+        .box5 {
+            /*  固定定位 宽度不会继承 */
+            position:fixed;   
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        absolute - div - 123 - 自撑开
+    </div>
+    <span class="box1"> absolute - span - 123- 自撑开</span>
+    <br />
+    <div class="box2">
+        relative - div - 123 - 撑满
+    </div>
+    <span class="box2"> relative - span - 123 - 自撑开</span>
+    <br />
+
+    <div class="box3">
+        static - div - 123 - 撑满
+    </div>
+    <span class="box3"> static - span - 123 - 自撑开</span>
+    <br />
+
+    <div class="box4">
+        sticky - div - 123 - 撑满
+    </div>
+    <span class="box4"> sticky - span - 123 - 自撑开</span>
+    <br />
+
+    <div class="box5">
+        fixed - div - 123 - 自撑开
+    </div>
+    <span class="box5"> fixed - fixed - 123 - 自撑开</span>
+    <br />
+
+</body>
+</html>

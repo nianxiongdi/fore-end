@@ -1,0 +1,26 @@
+<style type="text/css">
+    .box {
+      /* 宽300px 无继承性 */
+      width: 700px;
+      /* 边框线 无继承性 */
+      border: 1px solid red;
+      /*
+          color、text-align、font-size都有继承性
+          都可以继承给到其子孙元素
+      */
+      color: red;
+      text-align: center;
+      font-size: 14px;
+    }
+    .box p {
+      background-color: khaki;
+      /* p中自已设置了font-size，所以不会继承父元素的 */
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <p>我的文字颜色红色和文字水平居中，都是继承于父元素box的</p>
+    </div>
+  </body>
+  

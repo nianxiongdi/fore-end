@@ -8,8 +8,7 @@
 
 rust构建系统和包管理工具
 
-cargo version 
-
+cargo version
 
 // 创建项目
 cargo new project_name
@@ -23,10 +22,8 @@ cargo run
 cargo publish
 发布包
 
-
 cargo 配置文件
 [Title](Cargo.toml)
-
 
 rust代码的包 称为库
 
@@ -39,11 +36,12 @@ rust代码的包 称为库
 fn main() {
     let x = 5;  
     println!("The value of x is: {}", x);
-    x = 6
+    x = 6 // erroe
 }
 ```
 
 ### 常量
+
 
 * 与不可变变量类似，常量（constant）是绑定到一个常量名且不允许更改的值，但是常量和变量之间存在一些差异。
 
@@ -386,3 +384,7 @@ https://rustwiki.org/zh-CN/reference/attributes.html
 https://github.com/i5ting/learn-rust-for-fe 学习工具
 
 https://github1s.com/TonyCrane/note/tree/af3095d2af2e772ef30f510a9ef621154814b6d5
+
+https://rustwiki.org/zh-CN/rust-by-example/crates/lib.html
+
+<!-- https://zhuanlan.zhihu.com/p/350647994 -->

@@ -1,6 +1,8 @@
 # Chapter 1
 
 
+`mdbook`[文档]((https://crisal.io/tmp/book-example/book/format/theme/editor.html)`)
+
 初始化一本书或一个笔记项目
 ```
 mdbook init
