@@ -133,8 +133,8 @@
     "breaking_change": {
         "add_exclamation_to_title": true
     },
+    "confirm_with_editor": true,
     "confirm_commit": true,
-    "confirm_with_editor": false,
     "print_commit_output": true,
     "branch_pre_commands": [],
     "branch_post_commands": [],
@@ -172,7 +172,5 @@
         "description"
     ],
     "enable_worktrees": true,
-    "overrides": {
-        "shell": "/bin/sh"
-    }
- }
+    "overrides": {}
+}

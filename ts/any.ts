@@ -15,6 +15,9 @@ new value()
 value[0][1]
 
 
+let a;
+
+
 
 function invokeCallback(cb: unknown) {
   try {

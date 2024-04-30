@@ -11,4 +11,4 @@ proc-macro = true
 [dependencies]
 quote = "1.0.33"
 syn = "2.0.38"
-clap = { version = "4.4.7", features = ["derive"] }
+
