@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(() => {
+  for (let index = 0; index < 1000000000; index++) {
+    if(index===1000000000-1){
+      console.log('end')
+    }
+  }
+  console.log('setTimeout done')
+},0)
+document.getElementsByTagName('div')[0].innerHTML = '操作后文字'
+console.log(document.getElementsByTagName('div')[0].innerHTML)
+new Promise((resolve) => {resolve()}).then(() => {
+  console.log('promise done')
+  for (let index = 0; index < 10000000000; index++) {
+    if(index===10000000000-1){
+      console.log('done')
+    }
+  }
+})
+    </script>
+</body>
+</html>

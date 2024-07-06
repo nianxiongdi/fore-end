@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>parentElement vs parentNode</title>
+</head>
+<body>
+
+<div id="container">
+  <p id="paragraph">This is a paragraph with 123 <span id="span">a span element</span> inside.</p>
+  <!-- This is a comment -->
+  This is a text node.
+</div>
+
+<script>
+  const container = document.getElementById('container');
+  const paragraph = document.getElementById('paragraph');
+  const span = document.getElementById('span');
+  const comment = container.childNodes[2]; // 获取注释节点
+  const textNode = container.childNodes[3]; // 获取文本节点
+
+  // 获取 span 元素的父节点和父元素
+  console.log(span.parentNode); // <p id="paragraph">This is a paragraph with <span id="span">a span element</span> inside.</p>
+  console.log(span.parentElement); // <p id="paragraph">This is a paragraph with <span id="span">a span element</span> inside.</p>
+
+  // 获取 paragraph 元素的父节点和父元素
+  console.log(paragraph.parentNode); // <div id="container">...</div>
+  console.log(paragraph.parentElement); // <div id="container">...</div>
+
+  // 获取文本节点的父节点和父元素
+  console.log(textNode.parentNode); // <div id="container">...</div>
+  console.log(textNode.parentElement); // <div id="container">...</div>
+
+  // 获取注释节点的父节点和父元素
+  console.log(comment.parentNode); // <div id="container">...</div>
+  console.log(comment.parentElement); // <div id="container">...</div>
+
+  // 获取容器节点的父节点和父元素
+  console.log(container.parentNode); // <body>...</body>
+  console.log(container.parentElement) // <body>...</body>
+
+  // 获取 body 的父节点和父元素
+  console.log(document.body.parentNode); // <html>...</html>
+  console.log(document.body.parentElement); // <html>...</html>
+
+  // 获取 html 的父节点和父元素
+  console.log(document.documentElement.parentNode); // #document
+  console.log(document.documentElement.parentElement); // null
+
+  // 获取文档节点的父节点和父元素
+  console.log(document.parentNode); // null
+  console.log(document.parentElement); // null
+</script>
+
+</body>
+</html>

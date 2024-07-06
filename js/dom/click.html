@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    // 优先级第二
+    <div class="box" onClick="fun()">
+
+    </div>
+
+    <script>
+        function fun() {
+            console.log(">>> 1")
+        }
+        const dom = document.getElementsByClassName('box')[0]
+
+				// 优先级第三
+        dom.addEventListener('click', () => {
+            console.log(2)
+        })
+
+        dom.addEventListener('click', () => {
+            console.log(3)
+        })
+
+        // 下面两个只会打印一次
+        dom.addEventListener('click', fun)
+        dom.addEventListener('click', fun)
+
+        dom.onclick = function() {
+            console.log(">>> 111")
+        }
+        // 会覆盖onClick。且 有优先触发  
+        dom.onclick = function() {
+            console.log(">>> aaa")
+        }
+    </script>
+</body>
+</html>

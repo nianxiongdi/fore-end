@@ -1,0 +1,14 @@
+{
+	
+  "compilerOptions": {
+  	
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2016",
+    "lib": ["es2016", "dom"], // 如果需要 DOM 相关功能
+
+  },
+
+}
+

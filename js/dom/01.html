@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NamedNodeMap Example</title>
+</head>
+<body>
+  <div id="myDiv" class="container"  abc="123" data-info="example"></div>
+  <script>
+    var div = document.getElementById('myDiv');
+    var attributes = div.attributes; // 获取 NamedNodeMap
+
+    // 访问属性节点
+    console.log(attributes.length); // 3
+
+    // 通过名称获取属性节点
+    var classAttr = attributes.getNamedItem('class');
+    console.log('aaa', classAttr.name); // "class"
+    console.log(classAttr.value); // "container"
+
+    var abc = attributes.getNamedItem('abc');
+    console.log('aaa', abc.name); // "class"
+    console.log(abc.value); // "container"
+
+    // 通过索引访问属性节点
+    var firstAttr = attributes.item(0);
+    console.log(firstAttr.name); // "id"
+    console.log(firstAttr.value); // "myDiv"
+
+    // 添加新的属性节点
+    var newAttr = document.createAttribute('data-new');
+    newAttr.value = 'newValue';
+    attributes.setNamedItem(newAttr);
+    console.log(div.getAttribute('data-new')); // "newValue"
+
+    // 移除属性节点
+    attributes.removeNamedItem('data-info');
+    console.log(div.getAttribute('data-info')); // null
+  </script>
+</body>
+</html>

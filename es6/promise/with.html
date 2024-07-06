@@ -1,0 +1,42 @@
+<script>
+//     class NotPromise {
+//     constructor(executor) {
+//       // The "resolve" and "reject" functions behave nothing like the native
+//       // promise's, but Promise.withResolvers() just returns them, as is.
+//       executor(
+//         (value) => console.log("Resolved", value),
+//         (reason) => console.log("Rejected", reason),
+//       );
+//     }
+//   }
+  
+//   const { promise, resolve, reject } = Promise.withResolvers.call(NotPromise);
+//   resolve("hello");
+//   // Logs: Resolved hello
+
+
+Promise.withResolvers = function() {
+    let resolve, reject;
+    console.log('111')
+    let promise =  new Promise((_resolve, _reject) => {
+        resolve = _resolve
+        reject = _reject
+    })
+
+    return {
+        promise,
+        resolve,
+        reject
+    }
+}
+
+const { promise, resolve, reject } = Promise.withResolvers()
+
+resolve(1)
+
+promise.then((res) => {
+  console.log(1)
+})
+
+
+</script>

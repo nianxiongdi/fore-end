@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var targetNode = document.querySelector("body");
+        var observerOptions = {
+            childList: true, // 观察目标子节点的变化，是否有添加或者删除
+            attributes: true, // 观察属性变动
+            subtree: true, // 观察后代节点，默认为 false
+        };
+
+        function callback () {
+            debugger
+            console.log(">>> 123")
+        }
+
+        setTimeout(() => {
+            var observer = new MutationObserver(callback);
+            observer.observe(targetNode, observerOptions);
+
+            document.addEventListener('click', () => {
+                console.log(">>> click")
+            })
+            document.getElementsByTagName('body')[0].innerHTML = '操作后文字2311'
+            debugger
+            Promise.resolve(1).then(() => {
+                console.log(">>> promise")
+            })
+
+            // click又
+            setTimeout(() => {
+                console.log(">>> setTimeout")
+            }, 2000)
+        }, 300)
+        // https://blog.csdn.net/m0_37756431/article/details/135272473
+    </script>
+</body>
+</html>

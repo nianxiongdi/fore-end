@@ -1,0 +1,57 @@
+<head>
+    <style>
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        z-index: 0;
+      }
+      .box1-1 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        z-index: auto;
+      }
+      .green {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        width: 200px;
+        height: 200px;      
+        background: greenyellow;
+    }
+
+    .test {
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background: grey;
+        z-index: 10;
+    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- 父级盒子 -->
+
+    <div class="box1">
+
+    </div>
+
+    <div class="box1-1">
+        <div class="test"></div>
+
+    </div>
+    <div class="green">不设置z-index</div>
+
+  </body>
+  

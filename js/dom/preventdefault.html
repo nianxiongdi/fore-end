@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阻止默认事件示例</title>
+</head>
+<body>
+
+<form id="myForm">
+    <input type="text" name="username" placeholder="用户名">
+    <input type="submit" value="提交">
+</form>
+
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // 阻止表单提交的默认行为
+    console.log('表单提交的默认行为被阻止了');
+});
+</script>
+
+</body>
+</html>

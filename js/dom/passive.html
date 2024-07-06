@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passive Event Listener Test</title>
+</head>
+<body>
+
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<p>Scroll this page to test the event listener.</p>
+<script>
+/* 检测浏览器是否支持该特性 */
+let passiveIfSupported = false;
+
+try {
+  window.addEventListener(
+    "test",
+    null,
+    Object.defineProperty({}, "passive", {
+      get() {
+        passiveIfSupported = { passive: true };
+      },
+    }),
+  );
+} catch (err) {}
+
+console.log('Passive Event Listener Supported:', passiveIfSupported);
+
+window.addEventListener(
+  "scroll",
+  (event) => {
+    console.log('Scroll event triggered');
+    /* do something */
+    // 不能使用 
+    event.preventDefault();
+  },
+  passiveIfSupported,
+);
+
+</script>
+
+</body>
+</html>

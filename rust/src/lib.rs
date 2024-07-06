@@ -1,53 +1,37 @@
-use proc_macro::TokenStream;
+use wasm_bindgen::prelude::*;
+use wasm_bindgen_test::*;
 
-extern crate proc_macro;
-
-// 函数式宏
-#[proc_macro]
-pub fn make_hello(item: TokenStream) -> TokenStream {
-    let name = item.to_string();
-    let hell = "Hello ".to_string() + name.as_ref();
-    let fn_name =
-        "fn hello_".to_string() + name.as_ref() + "(){ println!(\"" + hell.as_ref() + "\"); }";
-    fn_name.parse().unwrap()
+#[wasm_bindgen]
+pub fn add(a: u32, b: u32) -> u32 {
+    a + b
 }
 
-// 属性宏 （两个参数）
-// 编译期间会打印结构类型和参数，后面可用修改替换原属性定义。
-// https://cloud.tencent.com/developer/article/1832788
-#[proc_macro_attribute]
-pub fn log_attr(attr:TokenStream, item:TokenStream)->TokenStream{
-    println!("Attr:{}", attr.to_string());
-    println!("Item:{}", item.to_string());
-    item
+#[wasm_bindgen]
+pub fn aaa(a: u32, b: u32) -> u32 {
+    a + b
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use wasm_bindgen_test::*;
 
-// 派生宏
-#[proc_macro_derive(Hello)]
-pub fn hello_derive(input: TokenStream)-> TokenStream {
-    println!("{:?}", input);
-    TokenStream::new()  
-    // 如果直接返回input，编译会报重复定义，说明派生宏用于扩展定义
-    // input    
+    wasm_bindgen_test_configure!(run_in_browser);
+
+    #[wasm_bindgen_test]
+    fn test_add() {
+        assert_eq!(add(1, 2), 13);
+        assert_eq!(add(10, 20), 30);
+    }
 }
+ 
+// https://www.levenx.com/issues/running-a-wasm-file-in-node-js-hbmgcy
 
-// #![allow(unused)]
-// fn main() {
-// mod front_of_house {
-//     mod hosting {
-//         fn add_to_waitlist() {}
+// https://juejin.cn/post/7269958378478633012
 
-//         fn seat_at_table() {}
-//     }
 
-//     mod serving {
-//         fn take_order() {}
+// https://github.com/Qinsuyan/rust-wasm-test/tree/main
 
-//         fn serve_order() {}
+// https://medium.com/@GetInRhythm/how-to-publish-a-command-line-tool-to-npm-3325b272ffe7
 
-//         fn take_payment() {}
-//     }
-// }
-// }
-// // 默认是是 private
+// https://github1s.com/infinyon/node-bindgen/blob/master/nj-cli/src/init/mod.rs

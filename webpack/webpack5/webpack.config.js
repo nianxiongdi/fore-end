@@ -13,6 +13,20 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/, // 对所有 .js 文件使用 babel-loader
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'], // 使用 @babel/preset-env 预设
+          },
+        },
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",

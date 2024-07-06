@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" class="box">
+        1 > 2
+    </div>
+
+
+    <script>
+        console.log(box.innerHTML);
+        console.log(box.outerHTML);
+
+
+        var name = "<img src=x onerror=alert(1)>";
+        box.innerHTML = name;
+    </script>
+</body>
+</html>

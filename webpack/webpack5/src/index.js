@@ -13,8 +13,25 @@
 // });
 
 
-btn.addEventListener("click", () => {
-    import(/* webpackChunkName: "hello" */ "./title").then((result) => {
-        console.log(result.default);
-    });    
-})
+// btn.addEventListener("click", () => {
+//     import(/* webpackChunkName: "hello" */ "./title").then((result) => {
+//         console.log(result.default);
+//     });    
+// })
+
+
+class Person {
+    #name;
+    constructor(name) {
+      this.#name = name; // 错误：未定义私有字段
+    }
+  
+    printName() {
+      console.log(this.#name);
+    }
+}
+
+
+const p = new Person()
+
+// p.#name

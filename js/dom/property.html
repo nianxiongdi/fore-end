@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attribute vs Property</title>
+</head>
+<body>
+
+<input type="text" id="in1" value="initial value">
+
+<script>
+const in1 = document.getElementById('in1');
+
+// 修改 property
+in1.value = 'new value of prop';
+
+// 查看修改后的 property 和 attribute
+console.log(in1.value);              // 'new value of prop'
+console.log(in1.getAttribute('value')); // 'initial value'
+
+// 修改 attribute
+in1.setAttribute('value', 'new value of attr');
+
+// 查看修改后的 property 和 attribute
+console.log(in1.value);              // 'new value of prop'
+console.log(in1.getAttribute('value')); // 'new value of attr'
+
+// https://www.cnblogs.com/lmjZone/p/8760232.html
+
+/*
+	property能够从attribute中得到同步；
+		attribute不会同步property上的值； 
+		attribute和property之间的数据绑定是单向的，attribute->property；
+		更改property和attribute上的任意值，都会将更新反映到HTML页面中；
+		同时修改时， property优先级高
+*/
+</script>
+
+</body>
+</html>

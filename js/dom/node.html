@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        sada
+        <text>1233</text>
+        <div>123</div>
+    </div>
+
+    <script>
+
+        const dom = document.getElementById('box')
+        const childs = dom.childNodes
+        childs.forEach(item => {
+            console.log(item.nodeName, item.nodeType, item.nodeValue)
+        })
+
+        console.log(">>> node", dom.textContent)
+    </script>
+</body>
+</html>
