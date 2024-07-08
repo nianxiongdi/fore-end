@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-image: -webkit-linear-gradient(top, transparent 49px, transparent 49px, black 50px), -webkit-linear-gradient(right, transparent 49px, transparent 49px, black 50px);
+            background-size: 50px 50px;   
+        }
+        .container {
+            width: 100px;
+            height: 100px;
+            margin-top: 300px;
+            margin-left: 300px;
+            background-color: orange;
+            
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: step(4,end ); */
+            transition: width 3s steps(4);
+        }
+        .container:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container"></div>
+    </div>
+</body>
+</html>
