@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抛物线</title>
+
+    <style>
+        /* 记录轨迹 */
+        /* <!-- https://github.com/greensock/GSAP --> */
+        /* <!-- https://levent-j.com/2023/02/01/like-anim/ --> */
+/* https://www.zhangxinxu.com/wordpress/2018/08/css-css3-%E6%8A%9B%E7%89%A9%E7%BA%BF%E5%8A%A8%E7%94%BB/ */
+        @property --x {
+            syntax: "<length>";
+            initial-value: 0px;
+            inherits: false;
+        }
+
+        @property --y {
+            syntax: "<length>";
+            initial-value: 0px;
+            inherits: false;
+        }
+
+        .outer {
+            --x: 0px;
+            --y: 0px;
+            width: 20px;
+            height: 20px;
+            margin: 200px;
+            border-radius: 50%;
+            background-color: orange;
+            transform: translate(var(--x), var(--y));
+            animation: x 2s linear infinite, y 2s cubic-bezier(.55,0,.85,.36) infinite;
+
+            /* animation-timing-function: cubic-bezier(.55,0,.85,.36); */
+            /* animation-iteration-count: ; */
+        }
+
+        @keyframes x {
+            to {
+                --x: 100px;
+            }
+        }
+
+        @keyframes y {
+            to {
+                --y: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+    </div>
+</body>
+</html>
