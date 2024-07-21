@@ -2,21 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 。  
     <title>Document</title>
     <style>
         .box {
-            width: 100px;
+            width: 7.5rem;
             height: 100px;
             background-color: orange;
+            font-size: 0.5rem;
         }
     </style>
 </head>
 <body>
     <div class="box">
-
+        shihi 
     </div>
     <script>
+        function setPixel() {
+    function e() {
+        // 计算字体大小，取 60px 和 (视口宽度 / 375) * 50 中的最小值
+        var e = Math.min(60, document.documentElement.clientWidth / 375 * 50);
+        document.documentElement.style.fontSize = e + "px";
+    }
+
+    // 检查页面是否应为响应式
+    if (typeof window.isResponsive !== "boolean" || window.isResponsive) {
+        // 设置初始字体大小
+        e();
+        // 添加事件监听器，监听方向变化或窗口大小变化
+        window.addEventListener("orientationchange" in window ? "orientationchange" : "resize", e, false);
+    } else {
+        // 如果不是响应式，则设置固定字体大小
+        document.documentElement.style.fontSize = "50px";
+    }
+}
+
+// 如果在浏览器环境中运行，则立即调用函数
+if (typeof window !== "undefined") {
+    setPixel();
+}
         // var metaEl= document.querySelector('meta[name="viewport"]');
         // var dpr = window.devicePixelRatio;
         // var scale = 1 / dpr
