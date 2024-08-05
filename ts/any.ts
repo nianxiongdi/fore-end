@@ -6,7 +6,7 @@ let value: any
 
 value.foo.bar() // ok
 
-value.trim()
+value.trim() 
 
 value()
 
