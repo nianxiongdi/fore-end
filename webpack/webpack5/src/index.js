@@ -20,18 +20,25 @@
 // })
 
 
-class Person {
-    #name;
-    constructor(name) {
-      this.#name = name; // 错误：未定义私有字段
-    }
+// class Person {
+//     #name;
+//     constructor(name) {
+//       this.#name = name; // 错误：未定义私有字段
+//     }
   
-    printName() {
-      console.log(this.#name);
-    }
-}
+//     printName() {
+//       console.log(this.#name);
+//     }
+// }
 
 
-const p = new Person()
+// const p = new Person()
 
 // p.#name
+
+
+function * f() {
+  const a = yield 1
+
+  console.log(">>> a", a)
+}

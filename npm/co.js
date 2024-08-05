@@ -20,31 +20,44 @@ const co = require('co');
  *      http://es6.ruanyifeng.com/#docs/generator
  **/ 
 
+
+const p = co(function* () {
+  var res = yield [1, 2, 3]
+  var res1 = yield [4, 5, 6]
+
+  console.log(res)
+})
+
+console.log(">>> p", p)
+
+
+/*
+
 co(function* () {
-    var res = yield [
+  var res = yield [
+    Promise.resolve(1),
+    Promise.resolve(2)
+  ];
+  var res1 = yield [
       Promise.resolve(1),
       Promise.resolve(2)
     ];
-    var res1 = yield [
-        Promise.resolve(1),
-        Promise.resolve(2)
-      ];
-    console.log(res);
-    console.log(res1);
+  console.log(res);
+  console.log(res1);
 
-  }).catch(e=>{
-      console.log(e)
-  });
+}).catch(e=>{
+    console.log(e)
+});
   
   // 对象的写法
-  co(function* () {
-    var res = yield {
-      1: Promise.resolve(1),
-      2: Promise.resolve(2),
-    };
-    console.log(res);
-  }).catch(e=>{
-    console.log(e)
+co(function* () {
+  var res = yield {
+    1: Promise.resolve(1),
+    2: Promise.resolve(2),
+  };
+  console.log(res);
+}).catch(e=>{
+  console.log(e)
 });
 
 
@@ -61,3 +74,6 @@ co(function* () {
     return x
   }
 //  上面的代码允许并发三个somethingAsync异步操作，等到它们全部完成，才会进行下一步。
+
+
+*/
