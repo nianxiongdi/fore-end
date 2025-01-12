@@ -3,7 +3,7 @@
 /**
  * 数据的扁平化
 */
-const tree =  [
+const tree = [
     {
         "id": 1,
         "title": "title1",
@@ -43,12 +43,33 @@ const tree =  [
 ]
 
 
-function flatten(tree) {
-    return tree.reduce((pre, cur) => {
-        const { id, title, pid, children=[] } = cur
-        return pre.concat({id, title, pid}, flatten(children))
-    }, [])
-}
+// function flatten(tree) {
+//     return tree.reduce((pre, cur) => {
+//         const { id, title, pid, children = [] } = cur
+//         return pre.concat({ id, title, pid }, flatten(children))
+//     }, [])
+// }
 
+function treeToObject(tree) {
+    const result = {};
+  
+    function traverse(node) {
+      const { id, title, pid } = node
+      result[node.id] = { id, title, pid }
+      ; // 保留完整的节点，包括 children
+      if (node.children) {
+        for (const child of node.children) {
+          traverse(child); // 递归处理子节点
+        }
+      }
+    }
+  
+    for (const rootNode of tree) {
+      traverse(rootNode); // 处理每个根节点
+    }
+  
+    return result;
+  }
+  
 
-console.log(flatten(tree))
+console.log(treeToObject(tree))

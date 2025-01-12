@@ -39,12 +39,17 @@ function sortArray(arr) {
       heapify(arr, i, size);
   }
   console.log(arr)
+ /*
+     9
+    4 3
+  2 1 5 6
  
+ */
   // // 从堆中提取元素并进行排序
   for (let i = size - 1; i > 0; i--) {
       swap(arr, 0, i); // 末尾元素是最大的
       console.log(arr);
-      return
+      // return
       heapify(arr, 0, i); 
       console.log(arr);
 

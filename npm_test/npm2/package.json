@@ -1,0 +1,20 @@
+{
+  "name": "npm2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npminstall2": "npm install npm@2.15.12 --no-save",
+    "i2": "npx npm install @cjsong2021/test-pack-a",
+    "npm2": "npm run npminstall2 && npm run i2",
+    "npm":"node npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cjsong2021/test-pack-a": "^1.0.12",
+    "dayjs": "^1.11.13",
+    "npm": "^11.0.0"
+  }
+}

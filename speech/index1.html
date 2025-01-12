@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语音聊天记录 - 语音识别 Demo</title>
+</head>
+<body>
+  <h1>语音识别 Demo</h1>
+  <button id="startRecognitionBtn">开始语音识别</button>
+  <button id="stopRecognitionBtn">停止语音识别</button>
+  <p id="status"></p>
+  <p id="transcript">识别结果: </p>
+
+  <script>
+    // 创建 SpeechRecognition 实例
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+    // 设置语音识别语言
+    recognition.lang = 'zh-CN'; // 中文识别
+
+    // 启动识别时
+    recognition.onstart = function () {
+      document.getElementById('status').textContent = '语音识别已启动...';
+      console.log('语音识别已启动...');
+    };
+
+    // 识别过程中
+    recognition.onresult = function (event) {
+      const transcript = event.results[0][0].transcript;
+      document.getElementById('transcript').textContent = '识别结果: ' + transcript;
+      console.log('识别结果:', transcript);
+    };
+
+    // 发生错误时
+    recognition.onerror = function (event) {
+      console.error('语音识别错误:', event.error);
+      document.getElementById('status').textContent = '发生错误: ' + event.error;
+    };
+
+    // 停止识别时
+    recognition.onend = function () {
+      console.log('语音识别结束');
+      document.getElementById('status').textContent = '语音识别结束';
+    };
+
+    // 启动语音识别
+    function startRecognition() {
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(stream => {
+          recognition.start();
+          console.log('开始录音...');
+          document.getElementById('status').textContent = '开始录音...';
+        })
+        .catch(err => {
+          console.error('获取音频流失败:', err);
+          document.getElementById('status').textContent = '获取音频流失败: ' + err.message;
+        });
+    }
+
+    // 停止语音识别
+    function stopRecognition() {
+      recognition.stop();
+      console.log('停止录音...');
+      document.getElementById('status').textContent = '停止录音...';
+    }
+
+    // 绑定按钮事件
+    document.getElementById('startRecognitionBtn').addEventListener('click', startRecognition);
+    document.getElementById('stopRecognitionBtn').addEventListener('click', stopRecognition);
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Recognition Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #output {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Speech Recognition Demo</h1>
+  <button id="startBtn">Start Listening</button>
+  <div id="output">Your speech will appear here...</div>
+
+  <script>
+    // Check if SpeechRecognition is supported
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      alert("Sorry, your browser does not support speech recognition.");
+    } else {
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'zh-CN'; // 设置语言为简体中文
+      recognition.interimResults = true; // Show intermediate results
+      recognition.maxAlternatives = 1; // Show only the best match
+
+      // Get the button and output div
+      const startBtn = document.getElementById('startBtn');
+      const outputDiv = document.getElementById('output');
+
+      // Event listener for starting the recognition
+      startBtn.addEventListener('click', () => {
+        recognition.start();
+        outputDiv.textContent = "Listening...";
+      });
+
+      // Event handler for when speech is recognized
+      recognition.onresult = (event) => {
+        let transcript = '';
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          transcript += event.results[i][0].transcript;
+        }
+        outputDiv.textContent = transcript; // Display the recognized text
+      };
+
+      // Event handler for when speech recognition ends
+      recognition.onspeechend = () => {
+        outputDiv.textContent += ' (Speech ended)';
+      };
+
+      // Event handler for errors
+      recognition.onerror = (event) => {
+        console.log(">>> Error occurred", event);
+        
+        outputDiv.textContent = 'Error occurred: ' + event.error;
+      };
+    }
+  </script>
+
+</body>
+</html>
